@@ -77,6 +77,7 @@
 \tableofcontents
 
 %\pagebreak
+%https://github.com/emisseldine/MisselBooks/tree/main/Calculus
 %\section*{Preface}
 %This textbook is designed to guide you through the fundamental concepts of differential calculus, providing a comprehensive and accessible resource for your first collegiate calculus course.
 %
@@ -315,12 +316,12 @@ For \exerrefs{functiongraph}, the graphs of $f$ and $g$ are illustrated.
 \columnratio{0.65}
 \begin{paracol}{2}
 \begin{enumerate}[!HW!]
-\item\label{exer:functiongraph:start} Find the domain and range of $f$.\\
+\exerlabelstart{functiongraph} Find the domain and range of $f$.\\
 \item Find the domain and range of $g$.\\
 \item Evaluate $g(0)$.\\
 \item Solve $f(x)=3$.\\
 \item Solve $f(x)=g(x)$.\\
-\item\label{exer:functiongraph:stop} On what intervals is $f$ decreasing?\\
+\exerlabelstop{functiongraph} On what intervals is $f$ decreasing?\\
 \end{enumerate}
 \switchcolumn
 \begin{tikzpicture}[scale=0.6]
@@ -370,7 +371,7 @@ For \exerrefs{functiongraph}, the graphs of $f$ and $g$ are illustrated.
 For \exerrefs{evenfunction},  determine analytically if the function is even, odd, or neither.  Justify your response.
 \begin{enumerate}[!HW!]
 \begin{multicols}{4}
-\item \label{exer:evenfunction:start} $f(x) = x^5-x$ 
+\exerlabelstart{evenfunction} $f(x) = x^5-x$ 
 \item  $g(x) = x^4-1$ 
 \itemspade $h(x) = \sqrt[3]{x}$ 
 \itemspade $f(x) = \sqrt[3]{2x^2+1}$ 
@@ -389,7 +390,7 @@ For \exerrefs{evenfunction},  determine analytically if the function is even, od
 \end{multicols}
 \begin{multicols}{4}
 \itemspade $h(x)=x|x|$ 
-\item\label{exer:evenfunction:stop} $f(x) = \dfrac{2x}{|x|}$ 
+\exerlabelstop{evenfunction} $f(x) = \dfrac{2x}{|x|}$ 
 \end{multicols}
 \end{enumerate}
 
@@ -397,7 +398,7 @@ For \exerrefs{evenfunction},  determine analytically if the function is even, od
 For \exerrefs{domain},  find the domain of the function. 
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
-\item\label{exer:domain:start} $f(x) =\dfrac{2x+1}{x^2-1}$
+\exerlabelstart{domain} $f(x) =\dfrac{2x+1}{x^2-1}$
 \item $f(x) = \dfrac{(3x-1)(2x+7)}{(x+2)(5x+4)}$
 \item $f(x) = \dfrac{(x+2)(5x+4)}{(3x-1)(2x+7)}$
 \end{multicols}
@@ -413,7 +414,7 @@ For \exerrefs{domain},  find the domain of the function.
 \end{multicols}
 \begin{multicols}{3}
 \itemspade  $h(x)=\dfrac{1}{\sqrt[4]{x^2-5x}}$ 
-\item\label{exer:domain:stop} $f(x) = \dfrac{\sqrt{2x+1}}{x^2-1}$
+\exerlabelstop{domain} $f(x) = \dfrac{\sqrt{2x+1}}{x^2-1}$
 \end{multicols}
 \end{enumerate}
 
@@ -421,7 +422,7 @@ For \exerrefs{domain},  find the domain of the function.
 For \exerrefs{differencequotient}, given the function $f$, evaluate and simplify the difference quotient $\dfrac{f(a+h)-f(a)}{h}$, where $h\neq 0$. 
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
-\item\label{exer:differencequotient:start}  $f(x) = x^2$ 
+\exerlabelstart{differencequotient}  $f(x) = x^2$ 
 \item  $f(x) = 2x^2+1$ 
 \itemspade  $f(x)=5-9x$ 
 \end{multicols}
@@ -433,7 +434,7 @@ For \exerrefs{differencequotient}, given the function $f$, evaluate and simplify
 \begin{multicols}{3}
 \item $f(x)=\dfrac{1}{x}$ %Jack Stabler
 \itemspade $f(x) = \dfrac{7}{x+4}$ 
-\item\label{exer:differencequotient:stop} $f(x) = x^3$
+\exerlabelstop{differencequotient} $f(x) = x^3$
 \end{multicols}
 \end{enumerate}
 \pagebreak
@@ -721,7 +722,7 @@ h(3) &=& (3)^2-3(3)+4 = 4.
 For \exerrefs{library}, which function has its graph illustrated to the right?
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
-\item\label{exer:library:start} \mbox{}\\
+\exerlabelstart{library} \mbox{}\\
 \begin{tikzpicture}[scale = 0.7]
 \gridlines{-3}{3}{-3}{3};
 \draw[ultra thick, <->, blue, domain=-3:3] plot (\x, {abs(\x)}) node[below right] {$f$};
@@ -783,7 +784,7 @@ For \exerrefs{library}, which function has its graph illustrated to the right?
 \draw[ultra thick, <->, blue, domain=0.33:3] plot (\x, {1/\x}) node[above right] {$f$};
 \draw[ultra thick, <->, blue, domain=-3:-0.33] plot (\x, {1/\x});
 \end{tikzpicture}
-\item\label{exer:library:stop} \mbox{}\\
+\exerlabelstop{library} \mbox{}\\
 \begin{tikzpicture}[scale = 0.7]
 \gridlines{-3}{3}{-3}{3};
 \draw[ultra thick, <->, blue, domain=-1.16:1.16] plot (\x, {(\x)^7}) node[above right] {$f$};
@@ -796,7 +797,7 @@ For \exerrefs{library}, which function has its graph illustrated to the right?
 For \exerrefs{piecewise}, the graph of $f$ is provided below. Find a piece-wise function definition for $f$ which matches the graph provided.
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
-\item\label{exer:piecewise:start} \mbox{}\\
+\exerlabelstart{piecewise} \mbox{}\\
 \begin{tikzpicture}[scale=0.55]
 \draw[help lines, dashed] (-5,-4) grid (4,3);
 \gridlines{-5}{4}{-4}{3};
@@ -846,7 +847,7 @@ For \exerrefs{piecewise}, the graph of $f$ is provided below. Find a piece-wise 
 \draw[ultra thick, blue, ->] (3.2,2) -- (5,2) node[above, xshift=-7] {$f$};
 \end{tikzpicture}
 
-\item\label{exer:piecewise:stop} \mbox{}\\
+\exerlabelstop{piecewise} \mbox{}\\
 \begin{tikzpicture}[scale=0.5]
 \draw[help lines, gray, dashed] (-5,-5) grid (5,5);
 \gridlines{-5}{5}{-5}{5};
@@ -1044,11 +1045,11 @@ Let $g(x) = x+1$ and $f(x) = 1/x$. Then $(f\circ g)(x) = H(x)$.
 For \exerrefs{graphcompose}, the graphs of $f$ and $g$ are illustrated. Evaluate the expression.
 \begin{multicols}{5}
 \begin{enumerate}[!HW!]
-\item\label{exer:graphcompose:start} $f(g(-4))$
+\exerlabelstart{graphcompose} $f(g(-4))$
 \itemspade $g(f(-4))$
 \itemspade $(g\circ f)(1)$
 \itemspade $(f\circ g)(1)$ 
-\item\label{exer:graphcompose:stop} $(f\circ f)(2)$
+\exerlabelstop{graphcompose} $(f\circ f)(2)$
 \end{enumerate}
 \vfill
 \columnbreak
@@ -1565,7 +1566,7 @@ For \exerrefs{cw3}, find the exact value of the trigonometric function without a
 \end{multicols}
 \end{enumerate}
 
-For \exerrefs{less4}, find all five remaining trigonometric ratios for $\theta$ provided $0<\theta<\dfrac{\pi}{2}$. Find the radian measure of $\angle A$.
+For \exerrefs{less4}, find all five remaining trigonometric ratios for $\theta$ provided $0<\theta<\dfrac{\pi}{2}$. Find the radian measure of $\theta$.
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item\label{exer:less4:start} $\tan\theta =\dfrac{28}{96}$
@@ -6620,53 +6621,53 @@ One lesson to learn from this section is that a derivative is always with respec
 For \exerrefs{chaindiffII}, differentiate the function.
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
-\item \label{exer:chaindiffII:start} $y=e^{\tan(\sqrt{x})}$ %$y'=\dfrac{1}{2\sqrt{x}}(\sec(\sqrt{x}))^2e^{\tan(\sqrt{x})}$
-\itemspade $y=\sin(\tan(7x))$ %$'=7\cos(\tan(7x))\sec^2(7x)$
-\itemspade $y=\cos\left(\dfrac{1-e^{2x}}{1+e^{2x}}\right)$ %$y'=\sin\left(\dfrac{1-e^{2x}}{1+e^{2x}}\right)\left(\dfrac{4e^{2x}}{(1+e^{2x})^2}$
+\exerlabelstart{chaindiffII} $y=e^{\tan(\sqrt{x})}$ 
+\itemspade $y=\sin(\tan(7x))$ 
+\itemspade $y=\cos\left(\dfrac{1-e^{2x}}{1+e^{2x}}\right)$ 
 \end{multicols}
 \begin{multicols}{3}
-\itemspade $y=\cot^2(\sin\theta)$ %$\dfrac{dy}{d\theta} = -2\cos\theta \cot(\sin\theta)\csc^2(\sin\theta)$
-\itemspade $y=\cos(\cos(\cos x))$ %$\dydx = -\sin(\cos(\cos x))\sin(\cos x)\sin x$
-\item $f(x) = x^3-3^x$ %$f'(x)=3x^2-3^x\ln 3$
+\itemspade $y=\cot^2(\sin\theta)$ 
+\itemspade $y=\cos(\cos(\cos x))$ 
+\item $f(x) = x^3-3^x$ 
 \end{multicols}
 \begin{multicols}{3}
-\item $f(x) = x^\pi-\pi^x$ %$f'(x)=\pi x^{\pi-1}-\pi^x\ln \pi$
-\item $y = 3^{x^2}$ %$\dydx=(2x\ln 3)3^{x^2}$
-\item $f(x) = 2^{x^2-x+1}$ %\ddx f(x) = (\ln 2)(2x-1)2^{x^2-x+1}$
+\item $f(x) = x^\pi-\pi^x$ 
+\item $y = 3^{x^2}$ 
+\item $f(x) = 2^{x^2-x+1}$ 
 \end{multicols}
 \begin{multicols}{3}
-\itemspade $y=3^{\sqrt{x}}$ %$y'=\dfrac{3^{\sqrt{x}}(\ln 3)}{2\sqrt{x}}$
-\itemspade $f(t) = 6^{t^3}$ %$f'(t) = 3t^2(\ln 6)6^{t^3}$
-\itemspade $f(x) = 9^{C/x}$ %f'(x) = -\dfrac{(C\ln 9)9^{C/x}}{x^2}$
+\itemspade $y=3^{\sqrt{x}}$ 
+\itemspade $f(t) = 6^{t^3}$ 
+\itemspade $f(x) = 9^{C/x}$ 
 \end{multicols}
 \begin{multicols}{3}
-\item\label{exer:chaindiffII:stop} $f(x) = 2^{\sec(x)}$ %$f'(x) = (\ln 2)\sec(x)\tan(x)2^{\sec(x)}$
+\exerlabelstop{chaindiffII} $f(x) = 2^{\sec(x)}$ 
 \end{multicols}
 \end{enumerate}
 
 For \exerrefs{chaintangent}, find the equation of the tangent line to the curve at the given point.
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
-\item\label{exer:chaintangent:start} $f(x) = \sin(\sin(x))$ @ $(\pi, 0)$ %$y=-x+\pi$
-\itemspade $y=(1+2x)^8$ @ $(0,1)$ %$y=16x+1$
+\item\label{exer:chaintangent:start} $f(x) = \sin(\sin(x))$ @ $(\pi, 0)$ 
+\itemspade $y=(1+2x)^8$ @ $(0,1)$ 
 \end{multicols}
 \begin{multicols}{2}
-\itemspade $y=\sin(3x)+\sin^2(3x)$ @ $(0,0)$ %$y=3x$
-\item\label{exer:chaintangent:stop} $f(x) =  4e^{-x}-3(\sin x)^4$ @ $\left(\frac{\pi}{4},\frac{16-3e^{\pi/4}}{4e^{\pi/4}}\right)$ %$y=-\dfrac{3e^{\pi/4}+4}{e^{\pi/4}}x +\dfrac{3e^{\pi/4}(\pi+1) + 4\pi - 16}{4e^{\pi/4}}$
+\itemspade $y=\sin(3x)+\sin^2(3x)$ @ $(0,0)$ 
+\item\label{exer:chaintangent:stop} $f(x) =  4e^{-x}-3(\sin x)^4$ @ $\left(\frac{\pi}{4},\frac{16-3e^{\pi/4}}{4e^{\pi/4}}\right)$ 
 \end{multicols}
 \end{enumerate}
 
 \begin{enumerate}[!HW!]
-\itemspade Find all horizontal tangent lines to the graph of the function $f(x) = 2\cos x + \cos^2 x$. %$x=2n\pi, (2n+1)\pi$
+\itemspade Find all horizontal tangent lines to the graph of the function $f(x) = 2\cos x + \cos^2 x$.
 \end{enumerate}
 
 For \exerrefs{chaintable}, use the table below to evaluate the expression.
 \begin{multicols}{2}
 \begin{enumerate}[!HW!]
-\item \label{exer:chaintable:start} $h'(3)$ if $h=f\circ g$ %0
-\itemspade$h'(0)$ if $h=f\circ g$ %6
-\itemspade $h'(3)$ if $h(x)=\sqrt{3+2f(x)}$ %$\dfrac{3}{\sqrt{5}}$
-\item\label{exer:chaintable:stop} $h'(3)$ if $h=g\circ f$ %3
+\item \label{exer:chaintable:start} $h'(3)$ if $h=f\circ g$ 
+\itemspade$h'(0)$ if $h=f\circ g$ 
+\itemspade $h'(3)$ if $h(x)=\sqrt{3+2f(x)}$
+\item\label{exer:chaintable:stop} $h'(3)$ if $h=g\circ f$ 
 \end{enumerate}
 
 \begin{center}
@@ -6683,37 +6684,19 @@ $g'(x)$ & 3 & 1 & 2& 0& 4& 5
 For \exerrefs{secondchain}, find the second derivative of the function.
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
-\item \label{exer:secondchain:start} $f(x) = e^{5x}$ %f''(x) =25e^{5x}$
-\itemspade $y=e^{6e^x}$ %$y'' = 6e^{x+6e^x}(6e^x+1)$
+\item \label{exer:secondchain:start} $f(x) = e^{5x}$ 
+\itemspade $y=e^{6e^x}$ 
 \end{multicols}
 \begin{multicols}{2}
-\itemspade $y=\sqrt{\sin x}$ %$y'' = -\dfrac{2\sin^2 x + \cos^2 x}{4\sin x\sqrt{\sin x}}$
-\item \label{exer:secondchain:stop}  $f(x) = x^3-3^x$ %$f''(x) = 6x-(\ln 3)^2 3^x$
+\itemspade $y=\sqrt{\sin x}$ 
+\item \label{exer:secondchain:stop}  $f(x) = x^3-3^x$ 
 \end{multicols}
 \end{enumerate}
 
 
 \begin{enumerate}[!HW!]
 \item Prove that the derivative of an even function is odd. 
-%\item \begin{proof}
-%Let $f$ be an even function. Then
-%\begin{eqnarray*}
-%[f(-x)]' &=& [f(x)]'\\
-%f'(-x)\cdot (-x)' &=& f'(x)\\
-%-f'(-x) &=& f'(x)\\
-%f'(-x) &=& -f'(x)
-%\end{eqnarray*} Therefore, $f'$ is odd.
-%\end{proof}
-
 \item Prove that the derivative of an even function is even. 
-%\item \begin{proof}
-%Let $f$ be an odd function. Then
-%\begin{eqnarray*}
-%[f(-x)]' &=& [-f(x)]'\\
-%-f'(-x) &=& -f'(x)\\
-%f'(-x) &=& f'(x)
-%\end{eqnarray*} Therefore, $f'$ is even.
-%\end{proof} 
 \end{enumerate}
 \pagebreak
 %%%%%%%%%%%% Section 3.6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11674,9 +11657,9 @@ Since the region is a triangle, we may calculate  $\dint_0^4 2x\dx$ using our fo
 
 %\begin{Exam} Show that $\dint_a^b c\dx = c(b-a)$, for some constant $c$.\\
 %
-%\begin{proof}
+%\begin{pf}
 %The function $f(x) = c$ is a constant function, or in other words, is a horizontal line. The region under $f$ between $a$ and $b$ bounds a rectangle whose length is $c$ and width is $b-a$. Therefore, $\dint_a^b c\dx = c(b-a)$. 
-%\end{proof}
+%\end{pf}
 %\end{Exam}\vs
 
 \begin{Exam} Evaluate $\dint_0^1 \sqrt{1-x^2}\dx$.\\
@@ -12793,7 +12776,7 @@ For \exerrefs{integralpiecewise}, let $f(x) = \begin{cases} 0, & x<0\\  x, & 0\l
 %%%% Solutions %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%    
 %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%  
-\startSolutionsChap{precalc}{Precalculus}
+\startSolutionsChap{Precalculus}{precalc}
 %%%% Section 1.1 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 \startSolutions{Functions}{functions}
@@ -12934,36 +12917,32 @@ For \exerrefs{integralpiecewise}, let $f(x) = \begin{cases} 0, & x<0\\  x, & 0\l
 \item vertically stretched by a factor of 2;\\
 \item shifted up by 3 units;\\
 \item shifted right by 2 units.
-\end{itemize}\vfill
-\mbox{}\columnbreak
-
-\begin{tikzpicture}[scale=0.45]
-\draw[help lines, gray, dashed] (-8,-8) grid (8,8);
-\gridlines{-8}{8}{-8}{8};
+\end{itemize}
+\begin{tikzpicture}[scale=0.4]
+%\draw[help lines, gray, dashed] (-8,-8) grid (8,8);
+\gridlines{-1}{6}{-7}{8};
 \draw[blue, ultra thick, <->, domain=0.65:3.7, samples=100] plot ({\x}, {-2*(\x-2)^3+3});
 \draw[fill, blue] (2,3) circle (0.2) node[above right] {$(2,3)$};
 \draw[fill, blue] (1,5) circle (0.2) node[right] {$(1,5)$};
 \draw[fill, blue] (3,1) circle (0.2) node[right] {$(3,1)$};
-\end{tikzpicture}
-\end{multicols}
+\end{tikzpicture}\columnbreak
 
-\begin{multicols}{2}
 \itemspade The graph of $y=\sqrt{x}$ has been:
 \begin{itemize}
 \item vertically stretched by a factor of 2;\\
 \item shifted up by 3 units;\\
 \item shifted right by 2 units.
-\end{itemize}\vfill
-\mbox{}\columnbreak
+\end{itemize}
 
-\begin{tikzpicture}[scale=0.45]
-\draw[help lines, gray, dashed] (-8,-8) grid (8,8);
-\gridlines{-8}{8}{-8}{8};
+\begin{tikzpicture}[scale=0.4]
+%\draw[help lines, gray, dashed] (-8,-8) grid (8,8);
+\gridlines{-1}{8}{-1}{8};
 \draw[blue, ultra thick, ->, domain=3:7.75, samples=100] plot ({(1/2*(\x-3))^2+2}, {\x});
 \draw[fill, blue] (2,3) circle (0.2) node[below] {$(2,3)$};
 \draw[fill, blue] (3,5) circle (0.2) node[below right] {$(3,5)$};
 \draw[fill, blue] (6,7) circle (0.2) node[below right] {$(6,7)$};
 \end{tikzpicture}
+\vfill
 \end{multicols}
 
 \begin{multicols}{2}
@@ -12975,9 +12954,9 @@ For \exerrefs{integralpiecewise}, let $f(x) = \begin{cases} 0, & x<0\\  x, & 0\l
 \end{itemize}\vfill
 \mbox{}\columnbreak
 
-\begin{tikzpicture}[scale=0.45]
-\draw[help lines, gray, dashed] (-8,-8) grid (8,8);
-\gridlines{-8}{8}{-8}{8};
+\begin{tikzpicture}[scale=0.3]
+%\draw[help lines, gray, dashed] (-8,-8) grid (8,8);
+\gridlines{-4}{4}{-8}{8};
 \node[right, xshift=3] at (0,1) {$4$};
 \node[right, xshift=3] at (0,2) {$8$};
 \node[right, xshift=3] at (0,3) {$12$};
@@ -12993,9 +12972,9 @@ For \exerrefs{integralpiecewise}, let $f(x) = \begin{cases} 0, & x<0\\  x, & 0\l
 \node[right, xshift=3] at (0,-6) {$-24$};
 \node[right, xshift=3] at (0,-7) {$-28$};
 \draw[blue, ultra thick, <->, domain=-2.3:2.3, samples=100] plot  ({\x+1}, {(-2+1/2*(\x)^5)/4});
-\draw[fill, blue] (2,-1/4) circle (0.2) node[right] {$(2,-1)$};
-\draw[fill, blue] (1,-2/4) circle (0.2) node[above] {$(1,-2)$};
-\draw[fill, blue] (0,-3/4) circle (0.2) node[left] {$(0,-3)$};
+\draw[fill, blue] (2,-1/4) circle (0.25) node[below right] {$(2,-1)$};
+\draw[fill, blue] (1,-2/4) circle (0.35) node[above left] {$(1,-2)$};
+\draw[fill, blue] (0,-3/4) circle (0.45) node[left] {$(0,-3)$};
 \end{tikzpicture}
 \end{multicols}
 
@@ -13007,8 +12986,7 @@ $(f\circ f)(x)  = (x^2-1)^2-1,  (-\infty,\infty)$; \quad $(g\circ g)(x) = 2(2x+4
 $(f\circ f)(x)  = \sqrt[4]{x},  [0,\infty)$; \quad $(g\circ g)(x) = \sqrt[3]{9-\sqrt[3]{9-x}}, (-\infty,\infty)$
 \itemspade $(f\circ g)(x) = \dfrac{x+2}{x+11}+\dfrac{x+11}{x+2}, (-\infty,-11)\cup(-11,-2)\cup(-2,\infty)$; \\ 
 $(g\circ f)(x) = \dfrac{x^2+11x+1}{x^2+2x+1}, (-\infty,-1)\cup(-1,0)\cup(0,\infty)$;\\
-$(f\circ f)(x)  = x+\dfrac{1}{x}+\dfrac{x}{x^2+1},  (-\infty,0)\cup(0,\infty)$; \\
-$(g\circ g)(x) = \dfrac{4x+11}{x+5}, (-\infty,-5)\cup(-5,-2)\cup(-2\infty)$
+$(f\circ f)(x)  = x+\dfrac{1}{x}+\dfrac{x}{x^2+1},  (-\infty,0)\cup(0,\infty)$; $(g\circ g)(x) = \dfrac{4x+11}{x+5}, (-\infty,-5)\cup(-5,-2)\cup(-2,\infty)$
 \item $(f\circ g)(x) = x+2, [2,\infty)$; \quad $(g\circ f)(x) = \sqrt{x^2+2}, (-\infty,\infty)$;\\
 $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqrt{x-2}-2}, [6,\infty)$
 
@@ -13044,8 +13022,8 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 \begin{multicols}{6}
 \item $\dfrac{127\pi}{45}$
 \itemspade $2$
-\itemspade $\dfrac{32\pi}{3}$
-\item $20$
+\item $\dfrac{32\pi}{3}$
+\itemspade $20$
 \item $4\sqrt{\dfrac{5}{3}}$
 \item $\sqrt{\dfrac{78}{\pi}}$
 \end{multicols}
@@ -13183,11 +13161,11 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 \item shifted up by 2 units;\\
 \item shifted right by 1 unit.
 \end{itemize}
-\begin{tikzpicture}[scale=0.7]
+\begin{tikzpicture}[scale=0.5]
 \gridlines{-4}{4}{-4}{3};
 \draw[red, ultra thick, dashed] (-4,2) -- (4,2);
 \draw[blue, ultra thick, <->, domain=-5:1.75, samples=100] plot ({\x+1}, {-exp(\x)+2});
-\draw[blue, fill] (1,1) circle (0.15) node[right] {$(1,1)$};
+\draw[blue, fill] (1,1) circle (0.2) node[right] {$(1,1)$};
 \end{tikzpicture}
 \end{multicols}
 
@@ -13230,35 +13208,33 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 \item $(0,e)\cup(e,\infty)$
 \end{multicols}
 
+\pagebreak
 \begin{multicols}{2}
-\item The graph of $y=\ln(x)$ has been transformed by:
+\item The graph of $y=\ln(x)$ has been transformed:
 \begin{itemize}
 \item reflection across $y$-axis;\\
 \item shifted up by 2 units;\\
 \item shifted right by 2 units.
-\end{itemize} \vfill\mbox{}
-
-\begin{tikzpicture}[scale=0.85]
-\draw[help lines, gray, dashed] (-4,-4) grid (4,4);
-\gridlines{-4}{4}{-4}{4};
-\draw[red, ultra thick, dashed] (2,-4) -- (2,4);
+\end{itemize}
+\begin{tikzpicture}[scale=0.7]
+%\draw[help lines, gray, dashed] (-4,-4) grid (4,4);
+\gridlines{-4}{3}{-3}{4};
+\draw[red, ultra thick, dashed] (2,-3) -- (2,4);
 \draw[blue, ultra thick, <->, domain=-5:1.75, samples=100] plot ({-exp(\x)+2},{\x+2});
 \draw[blue, fill] (1,2) circle (0.1) node[above right] {$(1,2)$};
 \end{tikzpicture}
-\end{multicols}
-\begin{multicols}{2}
-\item The graph of $y=\ln(x)$ has been transformed by:
+
+\item The graph of $y=\ln(x)$ has been transformed:
 \begin{itemize}
 \item shifted up by 2 units;\\
 \item shifted left by 2 units.
-\end{itemize}\vfill\mbox{}
-
-\begin{tikzpicture}[scale=0.85]
-\draw[help lines, gray, dashed] (-4,-4) grid (4,4);
-\gridlines{-4}{4}{-4}{4};
+\end{itemize}
+\begin{tikzpicture}[scale=0.75]
+%\draw[help lines, gray, dashed] (-4,-4) grid (4,4);
+\gridlines{-3}{4}{-3}{4};
 \draw[red, ultra thick, dashed] (-2,-3) -- (-2,4);
 \draw[blue, ultra thick, <->, domain=-5:1.75, samples=100] plot ({exp(\x)-2},{\x+2});
-\draw[blue, fill] (-1,2) circle (0.1) node[above right] {$(-1,2)$};
+\draw[blue, fill] (-1,2) circle (0.1) node[below right] {$(-1,2)$};
 \end{tikzpicture}
 \end{multicols}
 
@@ -13374,7 +13350,7 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 \startSuppSolutions{precalc}
 \begin{enumerate}[!HW!, start=\getrefnumber{exer:solvepolynomial:start}]
-\item $x=\pm, -\dfrac{3}{2}$
+\item $x=\pm 1, -\dfrac{3}{2}$
 \end{enumerate}
 \vspace{-15pt}
 
@@ -13382,11 +13358,10 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 %%%   
 %%%% Chapter 2 %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%    
 %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutionsChap{limits}{Limits}
+\startSolutionsChap{Limits}{limits}
 %%%% Section 2.1 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{error}{Error and Tolerance}
-\rebootHW
+\startSolutions{Error and Tolerance}{error}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $0.79$
@@ -13412,8 +13387,7 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 
 %%%% Section 2.2 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{limit}{Limits of a Function}
-\rebootHW
+\startSolutions{Limits of a Function}{limit}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $0$
@@ -13452,46 +13426,35 @@ $(f\circ f)(x) = x^4+8x^2+20, (-\infty,\infty)$; \quad $(g\circ g)(x) \sqrt{\sqr
 \begin{multicols}{2}
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{tabular}{l|l}
-$x$ & $f(x)$\\\hline
-$5.5$ & 0.578947\\
-$5.1$ & 0.560440\\
-$5.05$ & 0.558011\\
-$5.01$ & 0.556049\\
-$5.005$ &  0.555802\\
-$5.001$ & 0.555605\\
-$4.9$ & 0.550562\\
-$4.95$ & 0.553073\\
-$4.99$ & 0.555061\\
-$4.995$ & 0.555309\\
-$4.999$ & 0.555506\\
-$\dlim_{x\to5}f(x)$ & $\dfrac{5}{9}$
-\end{tabular}
-\itemspade \mbox{}\vspace{-25pt}
+\scalebox{0.75}{
+\begin{tabular}{c||c|c|c|c|c|c|c|c|c|c|c|c}
+$x$ & $5.5$ & $5.1$ & $5.05$ & $5.01$ & $5.005$ & $5.001$ & $4.9$ & $4.95$ & $4.99$ & $4.995$ & $4.999$ & $\underset{\!}{\dlim_{x\to5}f(x)}$\\\hline
+$f(x)$ & 0.578947 & 0.560440 & 0.558011 & 0.556049 &  0.555802 & 0.555605 & 0.550562 & 0.553073 & 0.555061 & 0.555309 & 0.555506 & $\overset{\phantom{+}}{\dfrac{5}{9}}$
+\end{tabular}}
 
-\begin{tabular}{l|l}
-$x$ & $g(x)$\\\hline
-$0$ & 0\\
-$-0.5$ & $-1$\\
-$-0.9$ & $-9$\\
-$-0.95$ & $-19$\\
-$-0.99$ &  $-99$\\
-$-0.999$ & $-999$\\
-$-2$ & 2\\
-$-1.5$ & 3\\
-$-1.1$ & 11\\
-$-1.01$ & 101\\
-$-1.001$ & 1001\\
-$\dlim_{x\to-1}g(x)$ & DNE
-\end{tabular}
+
+%\begin{tabular}{l|l}
+%$x$ & $g(x)$\\\hline
+%$0$ & 0\\
+%$-0.5$ & $-1$\\
+%$-0.9$ & $-9$\\
+%$-0.95$ & $-19$\\
+%$-0.99$ &  $-99$\\
+%$-0.999$ & $-999$\\
+%$-2$ & 2\\
+%$-1.5$ & 3\\
+%$-1.1$ & 11\\
+%$-1.01$ & 101\\
+%$-1.001$ & 1001\\
+%$\dlim_{x\to-1}g(x)$ & DNE
+%\end{tabular}
 \end{multicols}
 \end{enumerate}
 \vspace{-15 pt}
 
 %%%% Section 2.3 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{limitprop}{Properties of Limits}
-\rebootHW
+\startSolutions{Properties of Limits}{limitprop}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $-19$
@@ -13540,8 +13503,7 @@ $\dlim_{x\to-1}g(x)$ & DNE
 
 %%%% Section 2.4 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{squeeze}{Properties of Limits II}
-\rebootHW
+\startSolutions{Properties of Limits II}{squeeze}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $-1$
@@ -13589,8 +13551,7 @@ $\dlim_{x\to-1}g(x)$ & DNE
 
 %%%% Section 2.5 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{continuous}{Continuity}
-\rebootHW
+\startSolutions{Continuity}{continuous}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $f$ is always continuous
@@ -13629,8 +13590,7 @@ $\dlim_{x\to-1}g(x)$ & DNE
 
 %%%% Section 2.6 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{intermediate}{Continuity II}
-\rebootHW
+\startSolutions{Continuity II}{intermediate}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $1/3$
@@ -13659,51 +13619,50 @@ $\dlim_{x\to-1}g(x)$ & DNE
 \end{multicols}
 
 \item 
-\begin{proof}
+\begin{pf}
 Let $f(x) = \cos x - x$, which is a continuous function. Note that $f(0) = \cos(0) - (0) = 1-0 = 1 > 0$ and $f\left(\dfrac{\pi}{2}\right) = \cos\left(\dfrac{\pi}{2}\right) - \left(\dfrac{\pi}{2}\right) = 0 - \left(\dfrac{\pi}{2}\right) = -\dfrac{\pi}{2} < 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $\dfrac{\pi}{2}$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \itemspade 
-\begin{proof}
+\begin{pf}
 Let $f(x) = x^4+x-9$, which is a continuous function. Note that $f(1) = (1)^4+(1)-9 = -7 < 0$ and $f(2) = (2)^4+(2)-9 = 9 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $1$ and $2$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \item 
-\begin{proof}
+\begin{pf}
 Let $f(x) = x^4+x-19$, which is a continuous function. Note that $f(0) = (0)^4+(0)-17= -17 < 0$ and $f\left(2\right) = (2)^4+(2) -17 = 18-17 = 1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $2$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \itemspade 
-\begin{proof}
+\begin{pf}
 Let $f(x) = 2x^3-4x^2+3x-2$, which is a continuous function. Note that $f(1) = 2(1)^3-4(1)^2+3(1)-2 = -1 < 0$ and $f(2) = 2(2)^3-4(2)^2+3(2)-2 = 4 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $1$ and $2$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \item 
-\begin{proof}
+\begin{pf}
 Let $f(x) = x^5-3x^3-x^2+1$, which is a continuous function.  Also, note that $f(1) = (1)^5-3(1)^3-(1)^2+1 = 1-3-1+1 = -2 < 0$ and $f\left(2\right) = (2)^5-3(2)^3-(2)^2+1 = 32-24-4+1= 5> 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $1$ and $2$ such that $f(c) = 0$. Therefore, $f$ have a real root between 1 and 2.
-\end{proof}
+\end{pf}
 \itemspade 
-\begin{proof}
+\begin{pf}
 Let $f(x) = \sqrt[3]{x}+x-1$, which is a continuous function. Note that $f(0) =\sqrt[3]{0} + (0) - 1 = -1 < 0$ and $f(1) = \sqrt[3]{1} + (1) - 1 = 1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $1$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \item
-\begin{proof}
+\begin{pf}
 Let $f(x) = 3^x+2x-3$, which is a continuous function. Note that $f(0) = e^0 +2(0)-3 = 1-3 = -2 < 0$ and $f(1) = e^1+2(1) - 3 = e-1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $1$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \item 
-\begin{proof}
+\begin{pf}
 Let $f(x) = \cos x - x^2+x$, which is a continuous function. Note that $f(0) = \cos(0) - 0^2 +(0) = 1 > 0$ and $f(\pi) = \cos(\pi) - (\pi)^2+(\pi) =-1 -\pi^2+\pi < 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $\pi$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \itemspade 
-\begin{proof}
+\begin{pf}
 Let $f(x) = \cos x - x^3$, which is a continuous function. Note that $f(0) = \cos(0) - (0)^3 = 1-0^3 = 1 > 0$ and $f\left(\dfrac{\pi}{2}\right) = \cos\left(\dfrac{\pi}{2}\right) - \left(\dfrac{\pi}{2}\right)^3 = 0 - \left(\dfrac{\pi^3}{8}\right) = -\dfrac{\pi^3}{8} < 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $\dfrac{\pi}{2}$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \item 
-\begin{proof}
+\begin{pf}
 Let $f(x) = \ln x +2x -3$, which is a continuous function. Note that $f(1) = \ln 1 + 2(1) -3 = -1< 0$ and $f(2) = \ln(2) +2(2)-4 = \ln(2) +1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $1$ and $2$ such that $f(c) = 0$. Therefore, the above equation has a solution.
-\end{proof}
+\end{pf}
 \end{enumerate}
 \vspace{-15 pt}
 %%%% Section 2.7 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{infinite}{Limits at Infinity}
-\rebootHW
+\startSolutions{Limits at Infinity}{infinite}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \itemspade $-\infty$
@@ -13772,8 +13731,7 @@ Let $f(x) = \ln x +2x -3$, which is a continuous function. Note that $f(1) = \ln
 \vspace{-15 pt}
 %%%% Section 2.8 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{asymptote}{Limits at Infinity II}
-\rebootHW
+\startSolutions{Limits at Infinity II}{asymptote}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $\dfrac{1}{2}$
@@ -13824,8 +13782,7 @@ Let $f(x) = \ln x +2x -3$, which is a continuous function. Note that $f(1) = \ln
 \vspace{-15 pt}
 %%%% Section 2.9 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{tangent}{Tangent Lines}
-\rebootHW
+\startSolutions{Tangent Lines}{tangent}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $-222$
@@ -13833,7 +13790,6 @@ Let $f(x) = \ln x +2x -3$, which is a continuous function. Note that $f(1) = \ln
 \item $-144$
 \itemspade $-109$
 \item $-81.7$
-
 \item 68.5
 \end{multicols}
 
@@ -13855,37 +13811,18 @@ Let $f(x) = \ln x +2x -3$, which is a continuous function. Note that $f(1) = \ln
 \item 3
 \item 1
 \end{multicols}
-\begin{multicols}{2}
-\itemspade $y=4x-40$
 
-\begin{tabular}{l|l}
-$a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
-8.9 & 4.444444\\
-8.99 & 4.040404\\
-8.999 & 4.004004\\
-8.9999 & 4.000400\\
-9.1 &  3.636364\\
-9.01 & 3.960396\\
-9.001 & 3.996004\\
-9.0001 & 3.999600\\
-9 & 4.0
+\itemspade $y=4x-40$\\
+\begin{tabular}{c||ccccccccc}
+$a$ & 8.9 & 8.99 & 8.999 & 8.9999 & 9.1 & 9.01 & 9.001 & 9.0001 & 9 \\\hline
+$\overset{\phantom{+}}{\dfrac{\Delta y}{\Delta x}}$ & 4.444444 & 4.040404 & 4.004004 & 4.000400 &  3.636364 & 3.960396 & 3.996004 & 3.999600 & 4.0
 \end{tabular} 
 
-\itemspade $y=\dfrac{1}{2}x-2$
-
-\begin{tabular}{l|l}
-$a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
-5.5 & 0.585786\\
-5.9 & 0.513167\\
-5.99 & 0.501256\\
-5.999 & 0.500125\\
-6.5 &  0.449490\\
-6.1 & 0.488088\\
-6.01 & 0.498756\\
-6.001 & 0.499875\\
-6 & 0.5
+\itemspade $y=\dfrac{1}{2}x-2$\\
+\begin{tabular}{c||ccccccccc}
+$a$ & 5.5 & 5.9 & 5.99 & 5.999 & 6.5 & 6.1 & 6.01 & 6.001 & 6 \\\hline
+$\overset{\phantom{+}}{\dfrac{\Delta y}{\Delta x}}$ &  0.585786 & 0.513167 & 0.501256 & 0.500125 &  0.449490 & 0.488088 & 0.498756 & 0.499875 & 0.5
 \end{tabular} 
-\end{multicols}
 
 \begin{multicols}{5}
 \itemspade $-26$
@@ -13916,8 +13853,7 @@ $a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
 
 %%%% Section 2.10 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{derivative}{Derivatives and Rates of Change}
-\rebootHW
+\startSolutions{Derivatives and Rates of Change}{derivative}
 \begin{enumerate}[!HW!]
 \begin{multicols}{4}
 \item $y = x$
@@ -13991,8 +13927,7 @@ $a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
 
 %%%% Section 2.10 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{fprime}{Derivatives and Rates of Change II}
-\rebootHW
+\startSolutions{Derivatives and Rates of Change II}{fprime}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $x=-2, 0,2$
@@ -14124,11 +14059,10 @@ $a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
 
 %%%% Chapter 3 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% 
-\startSolutionsChap{diff}{Derivatives}  
+\startSolutionsChap{Derivatives}{diff}  
 %%%% Section 3.1 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{power}{The Power Rule}
-\rebootHW
+\startSolutions{The Power Rule}{power}
 \begin{enumerate}[!HW!]
 \begin{multicols}{4}
 \item $f'(x)=\dfrac{1}{2}x^{-1/2}$
@@ -14193,8 +14127,7 @@ $a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
 
 %%%% Section 3.2 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{product}{The Product Rule}
-\rebootHW
+\startSolutions{The Product Rule}{product}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $f'(x) =x^{3}e^x\left(4+x\right)$
@@ -14256,8 +14189,7 @@ $a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
 
 %%%% Section 3.3 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{trigdiff}{Trigonometric Derivatives}
-\rebootHW
+\startSolutions{Trigonometric Derivatives}{trigdiff}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item 2
@@ -14311,7 +14243,7 @@ $a$ & $\dfrac{\Delta y}{\Delta x}$ \\ \hline
 \item $\ddydxdx = -2e^x\sin(x)$
 \end{multicols}
 \item 
-\begin{proof}
+\begin{pf}
 Let $f(x) = \cos x$. Then 
 \begin{eqnarray*}
 f'(x) &=& \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} = \lim_{h\to 0} \dfrac{\cos(x+h) - \cos(x)}{h}\\
@@ -14321,26 +14253,25 @@ f'(x) &=& \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} = \lim_{h\to 0} \dfrac{\cos(x+h
 &=& \cos(x)\cdot \lim_{h\to 0} \dfrac{\cos(h) - 1}{h} - \sin(x)\cdot \lim_{h\to 0}\dfrac{\sin(h)}{h}\\
 &=& \cos(x) \cdot 0 - \sin(x) \cdot 1  = -\sin(x).
 \end{eqnarray*} 
-\end{proof}
-\item \begin{proof}
+\end{pf}
+\item \begin{pf}
 \begin{multline*} \ddx(\sec x) = \ddx\dfrac{1}{\cos x} = \dfrac{\cos x(1') - 1(\cos x)'}{\cos^2x} = \dfrac{0+\sin x}{\cos^2x} = \dfrac{1}{\cos x}\left(\dfrac{\sin x}{\cos x}\right) = \sec x\tan x \qedhere\end{multline*}
-\end{proof}  
+\end{pf}  
 \itemspade 
-\begin{proof}
+\begin{pf}
 \begin{multline*} \ddx(\csc x) = \ddx\dfrac{1}{\sin x} = \dfrac{\sin x(1') - 1(\sin x)'}{\sin^2x} = \dfrac{0-\cos x}{\sin^2x}= -\dfrac{1}{\sin x}\left(\dfrac{\cos x}{\sin x}\right) = -\csc x\cot x \qedhere\end{multline*}
-\end{proof}
-\item \begin{proof}
+\end{pf}
+\item \begin{pf}
 \begin{multline*}
 \ddx(\cot x) = \ddx\dfrac{\cos x}{\sin x} = \dfrac{\sin x(\cos x)' - \cos x(\sin x)'}{\sin^2x} = \dfrac{-\sin^2 x-\cos^2 x}{\sin^2x} = -\dfrac{1}{\sin^2 x} = -\csc^2 x \qedhere\end{multline*}
-\end{proof}  
+\end{pf}  
 \end{enumerate}
 \vspace{-15pt}
 
 
 %%%% Section 3.4 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{chain}{The Chain Rule}
-\rebootHW
+\startSolutions{The Chain Rule}{chain}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $y'=2x+e^{-x} $
@@ -14402,8 +14333,7 @@ f'(x) &=& \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} = \lim_{h\to 0} \dfrac{\cos(x+h
 
 %%%% Section 3.5 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{chainII}{The Chain Rule II}
-\rebootHW
+\startSolutions{The Chain Rule II}{chainII}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $y'=\dfrac{1}{2\sqrt{x}}(\sec(\sqrt{x}))^2e^{\tan(\sqrt{x})}$
@@ -14458,8 +14388,7 @@ f'(x) &=& \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} = \lim_{h\to 0} \dfrac{\cos(x+h
 
 %%%% Section 3.6 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{implicit}{Implicit Differentiation}
-\rebootHW
+\startSolutions{Implicit Differentiation}{implicit}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $y'=-\dfrac{2x}{3y^2-3}$
@@ -14491,8 +14420,7 @@ f'(x) &=& \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} = \lim_{h\to 0} \dfrac{\cos(x+h
 
 %%%% Section 3.7 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{implicitII}{Implicit Differentiation II}
-\rebootHW
+\startSolutions{Implicit Differentiation II}{implicitII}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $f'(x)=\dfrac{2x}{\sqrt{1-x^4}}$
@@ -14524,7 +14452,7 @@ f'(x) &=& \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} = \lim_{h\to 0} \dfrac{\cos(x+h
 \end{multicols}
 
 \begin{multicols}{2}
-\itemspade \begin{proof}
+\itemspade \begin{pf}
 \begin{eqnarray*}
 y &=& \arccos(x)\\
 \cos(y) &=& x\\
@@ -14532,8 +14460,8 @@ y &=& \arccos(x)\\
 -\sin(y)y' &=&1\\
 y' &=& -\dfrac{1}{\sin(y)}\\ &=& -\dfrac{1}{\sqrt{1-\cos^2(y)}}\\ &=& -\dfrac{1}{\sqrt{1-x^2}}
 \end{eqnarray*}
-\end{proof} 
-\item \begin{proof}
+\end{pf} 
+\item \begin{pf}
 \begin{eqnarray*}
 y &=& \sec^{-1}(x)\\
 \sec(y) &=& x\\
@@ -14541,10 +14469,10 @@ y &=& \sec^{-1}(x)\\
 \tan(y)\sec(y)y' &=&1\\
 y' &=& \dfrac{1}{\tan(y)\sec(y)}\\ &=& \dfrac{1}{\sec(y)\sqrt{\sec^2(y)-1}}\\ &=& \dfrac{1}{x\sqrt{x^2-1}}
 \end{eqnarray*}
-\end{proof} 
-\end{multicols}
+\end{pf} 
+\end{multicols}\pagebreak
 \begin{multicols}{2}
-\item \begin{proof}
+\item \begin{pf}
 \begin{eqnarray*}
 y &=& \csc^{-1}(x)\\
 \csc(y) &=& x\\
@@ -14552,8 +14480,8 @@ y &=& \csc^{-1}(x)\\
 -\cot(y)\csc(y)y' &=&1\\
 y' &=& -\dfrac{1}{\csc(y)\cot(y)}\\ &=& -\dfrac{1}{\csc(y)\sqrt{\csc^2(y)-1}}\\ &=& -\dfrac{1}{x\sqrt{x^2-1}}
 \end{eqnarray*}
-\end{proof} 
-\item \begin{proof}
+\end{pf} 
+\item \begin{pf}
 \begin{eqnarray*}
 y &=& \cot^{-1}(x)\\
 \cot(y) &=& x\\
@@ -14561,7 +14489,7 @@ y &=& \cot^{-1}(x)\\
 -\csc^2(y)y' &=&1\\
 y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^2}
 \end{eqnarray*}
-\end{proof}
+\end{pf}
 \end{multicols}
 \end{enumerate}
 \vspace{-15pt}
@@ -14569,8 +14497,7 @@ y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^
 
 %%%% Section 3.7 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{logdiff}{Logarithmic  Differentiation}
-\rebootHW
+\startSolutions{Logarithmic  Differentiation}{logdiff}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $f'(x)=2x + \dfrac{1}{x}$
@@ -14684,8 +14611,7 @@ y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^
 
 %%%% Section 3.9 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{science}{Rates of Changes with the Sciences}
-\rebootHW
+\startSolutions{Rates of Changes with the Sciences}{science}
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
 \item \mbox{}\vspace{-22pt}
@@ -14854,8 +14780,7 @@ y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^
 
 %%%% Section 3.10 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{relate}{Related Rates}
-\rebootHW
+\startSolutions{Related Rates}{relate}
 \begin{enumerate}[!HW!]
 \begin{multicols}{4}
 \item $60\ \dfrac{\text{cm}^2}{\text{s}}$
@@ -14885,8 +14810,7 @@ y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^
 
 %%%% Section 3.11 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{relateII}{Related Rates II}
-\rebootHW
+\startSolutions{Related Rates II}{relateII}
 \begin{enumerate}[!HW!]
 \begin{multicols}{5}
 \item $\dfrac{4}{3}\ \dfrac{\text{cm}^2}{\text{min}}$
@@ -14932,14 +14856,14 @@ y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^
 \itemspade $\sinh(x) = \dfrac{7}{24}$, $\sech(x)=\dfrac{24}{25}$,\\ $\csch(x)=\dfrac{24}{7}$, $\tanh(x) = \dfrac{7}{25}$,\\ $\coth(x)=\dfrac{25}{7}$
 \end{multicols}
 
-\itemspade \begin{proof}\mbox{}\vspace{-35pt}
+\itemspade \begin{pf}\mbox{}\vspace{-35pt}
 
 \begin{multline*}
 \sinh(x)\cosh(y)+\cosh(x)\sinh(y) = \left(\dfrac{e^x-e^{-x}}{2}\right)\left(\dfrac{e^y+e^{-y}}{2}\right)+ \left(\dfrac{e^x+e^{-x}}{2}\right)\left(\dfrac{e^y-e^{-y}}{2}\right)\\
- = \dfrac{1}{4}((e^x-e^{-x})(e^y+e^{-y}) + (e^x+e^{-x})(e^y-e^{-y})) = \dfrac{1}{4}(e^xe^y + e^xe^{-y} - e^{-x}e^y - e^{-x}e^{-y} + e^xe^y - e^xe^{-y} + e^{-x}e^y - e^{-x}e^{-y})\\
+ = \dfrac{1}{4}((e^x-e^{-x})(e^y+e^{-y}) + (e^x+e^{-x})(e^y-e^{-y}))\\ = \dfrac{1}{4}(e^xe^y + e^xe^{-y} - e^{-x}e^y - e^{-x}e^{-y} + e^xe^y - e^xe^{-y} + e^{-x}e^y - e^{-x}e^{-y})\\
   = \dfrac{1}{4}(2e^xe^y   - 2e^{-x}e^{-y} ) = \dfrac{2}{4}(e^{x+y}- e^{-x-y}) = \sinh(x+y) \qedhere
 \end{multline*}
-\end{proof}
+\end{pf}
 
 \begin{multicols}{4}
 \item $\infty$
@@ -14981,7 +14905,7 @@ y' &=& -\dfrac{1}{\csc^2(y)}\\ &=& -\dfrac{1}{1+\cot^2(y)}\\ &=& -\dfrac{1}{1+x^
 \end{multicols}
 
 \begin{multicols}{2}
-\item \begin{proof}\mbox{}\vspace{-30pt}
+\item \begin{pf}\mbox{}\vspace{-30pt}
 
 \begin{eqnarray*}
 y &=& \tanh(x) = \dfrac{\sinh(x)}{\cosh(x)}\\
@@ -14989,36 +14913,36 @@ y' &=& \left(\dfrac{\sinh(x)}{\cosh(x)}\right)'\\
 & =& \dfrac{\cosh(x)\cosh(x) - \sinh(x)\sinh(x)}{\cosh^2(x)}\\
  &=& \dfrac{\cosh^2(x) -\sinh^2(x)}{\cosh^2(x)}\\ &=& \dfrac{1}{\cosh^2(x)} = \sech^2(x)
 \end{eqnarray*}
-\end{proof}\columnbreak
+\end{pf}\columnbreak
 
-\item \begin{proof}\mbox{}\vspace{-30pt}
+\item \begin{pf}\mbox{}\vspace{-30pt}
 
 \begin{eqnarray*}
 y &=& \coth(x) = \dfrac{\cosh(x)}{\sinh(x)}\\
 y' &=& \left(\dfrac{\cosh(x)}{\sinh(x)}\right)'\\ &=& \dfrac{\sinh(x)\sinh(x) - \cosh(x)\cosh(x)}{\sinh^2(x)}\\
  &=& \dfrac{\sinh^2(x) -\cosh^2(x)}{\sinh^2(x)}\\ &=& \dfrac{-1}{\sinh^2(x)} = -\csch^2(x)
 \end{eqnarray*}
-\end{proof}
-\end{multicols}
+\end{pf}
+\end{multicols}\pagebreak
 
 \begin{multicols}{2}
-\itemspade \begin{proof}\mbox{}\vspace{-35pt}
+\itemspade \begin{pf}\mbox{}\vspace{-15pt}
 
 \begin{eqnarray*}
 \ddx(\sech x) &=& \ddx\left(\dfrac{1}{\cosh x}\right)\\ &=& \dfrac{\cosh x(1)' - 1(\cosh x)'}{\cosh^2 x}\\ &=& \dfrac{-\sinh x}{\cosh^2 x}\\ &=& -\dfrac{1}{\cosh x}\left(\dfrac{\sinh x}{\cosh x}\right)\\ &=& -\sech x\tanh x
 \end{eqnarray*}
-\end{proof} \columnbreak
+\end{pf} \columnbreak
 
-\itemspade \begin{proof}\mbox{}\vspace{-35pt}
+\itemspade \begin{pf}\mbox{}\vspace{-15pt}
 
 \begin{eqnarray*}
 \ddx(\csch x) &=& \ddx\left(\dfrac{1}{\sinh x}\right)\\ &=& \dfrac{\sinh x(1)' - 1(\sinh x)'}{\sinh^2 x}\\ &=& \dfrac{-\cosh x}{\sinh^2 x} \\ &=& -\dfrac{1}{\sinh x}\left(\dfrac{\cosh x}{\sinh x}\right)\\ &=& -\csch x\coth x 
 \end{eqnarray*}
-\end{proof} 
+\end{pf} 
 \end{multicols}
 
 \begin{multicols}{2}
-\itemspade \begin{proof}\mbox{}\vspace{-35pt}
+\itemspade \begin{pf}\mbox{}\vspace{-35pt}
 
 \begin{eqnarray*}
 y &=& \cosh^{-1}(x)\\
@@ -15027,9 +14951,9 @@ y &=& \cosh^{-1}(x)\\
 \sinh(y)y' &=&1\\
 y' &=& \dfrac{1}{\sinh(y)}\\ & =& \dfrac{1}{\sqrt{\cosh^2(y)-1}}\\ &=& \dfrac{1}{\sqrt{x^2-1}}
 \end{eqnarray*}
-\end{proof} \columnbreak
+\end{pf} \columnbreak
 
-\itemspade \begin{proof}\mbox{}\vspace{-35pt}
+\itemspade \begin{pf}\mbox{}\vspace{-35pt}
 
 \begin{eqnarray*}
 y &=& \tanh^{-1}(x)\\
@@ -15038,11 +14962,11 @@ y &=& \tanh^{-1}(x)\\
 \sech^2(y)y' &=&1\\
 y' &=& \dfrac{1}{\sech^2(y)}\\ &=& \dfrac{1}{1-\tanh^2(y)} \\&=& \dfrac{1}{1-x^2}
 \end{eqnarray*}
-\end{proof}
+\end{pf}
 \end{multicols}
 
 \begin{multicols}{2}
-\item \begin{proof}\mbox{}\vspace{-35pt}
+\item \begin{pf}\mbox{}\vspace{-35pt}
 
 \begin{eqnarray*}
 y &=& \coth^{-1}(x)\\
@@ -15051,9 +14975,9 @@ y &=& \coth^{-1}(x)\\
 -\csch^2(y)y' &=&1\\
 y' &=& -\dfrac{1}{\csch^2(y)} \\&=& -\dfrac{1}{\coth^2(y)-1} \\&=& \dfrac{1}{1-\coth^2(y)}\\ &=& \dfrac{1}{1-x^2}
 \end{eqnarray*}
-\end{proof} \columnbreak
+\end{pf} \columnbreak
 
-\item \begin{proof}\mbox{}\vspace{-35pt}
+\item \begin{pf}\mbox{}\vspace{-35pt}
 
 \begin{eqnarray*}
 y &=& \sech^{-1}(x)\\
@@ -15062,7 +14986,7 @@ y &=& \sech^{-1}(x)\\
 -\tanh(y)\sech(y)y' &=&1\\
 y' &=& -\dfrac{1}{\tanh(y)\sech(y)}\\ &=& -\dfrac{1}{\sech(y)\sqrt{1-\sech^2(y)}}\\ &=& \dfrac{1}{x\sqrt{1-x^2}}
 \end{eqnarray*}
-\end{proof} 
+\end{pf} 
 \end{multicols}
 \end{enumerate}
 \vspace{-15pt}
@@ -15070,11 +14994,10 @@ y' &=& -\dfrac{1}{\tanh(y)\sech(y)}\\ &=& -\dfrac{1}{\sech(y)\sqrt{1-\sech^2(y)}
 
 %%%% Chapter 4 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% 
-\startSolutionsChap{apply}{Applications of Derivatives}  
+\startSolutionsChap{Applications of Derivatives}{apply}  
 %%%% Section 4.1 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{extreme}{Extrema}
-\rebootHW
+\startSolutions{Extrema}{extreme}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item local min @ $x=0$,\\ local max @ $x=\pm 1$,\\ global min DNE,\\ global max @ $y=1$\columnbreak
@@ -15146,166 +15069,164 @@ y' &=& -\dfrac{1}{\tanh(y)\sech(y)}\\ &=& -\dfrac{1}{\sech(y)\sqrt{1-\sech^2(y)}
 
 %%%% Section 4.2 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{mean}{The Mean Value Theorem}
-\rebootHW
+\startSolutions{The Mean Value Theorem}{mean}
 \setlength{\columnsep}{30pt}
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
 \item \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $(-\infty, \infty)$, $f$ is continuous on $[0,2]$ and differentiable on $(0,2)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
 f'(c) = 2c = \dfrac{f(2) - f(0)}{2-0} = \dfrac{(2)^2-(0)^2}{2} = 2\\
 \Rightarrow\ c = 1
 \end{multline*} Since $0 < 1 < 2$, we have that $c= 1$. 
-\end{proof}\columnbreak
+\end{pf}\columnbreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $(-\infty, \infty)$, $f$ is continuous on $[0,2]$ and differentiable on $(0,2)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
 f'(c)=4c-3 = \dfrac{f(2) - f(0)}{2-0}=\dfrac{(3-1}{2} = 1\\
 \Rightarrow\ 4c = 4\ \Rightarrow\ c = 1
 \end{multline*} Since $0 < 1 < 2$, we have that $c= 1$.
-\end{proof}
+\end{pf}
 \end{multicols}
 \begin{multicols}{2}
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $(-\infty, \infty)$, $f$ is continuous on $[3,5]$ and differentiable on $(3,5)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
-f'(c) = -32+8c = \dfrac{f(5) - f(3)}{5-3}\dfrac{-56-(-56)}{2} = 0\\
+f'(c) = -32+8c = \dfrac{f(5) - f(3)}{5-3}\\=\dfrac{-56-(-56)}{2} = 0\\
 \ \Rightarrow\ 8c = 32\ \Rightarrow\ c= 4
 \end{multline*} Since $3 < 4 < 5$, we have that $c= 4$.
-\end{proof}\columnbreak
+\end{pf}\columnbreak
 
 \item \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $(-\infty, \infty)$, $f$ is continuous on $[0,1]$ and differentiable on $(0,1)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
-f'(c) = -12c^2+7 = \scalebox{0.9}{$\dfrac{f(1) - f(0)}{1-0}=\dfrac{(-4+7-3)-(-3)}{1}$} = 3\\ \Rightarrow\-12c^2 = -4
+f'(c) = -12c^2+7 = \dfrac{f(1) - f(0)}{1-0}\\=\dfrac{(-4+7-3)-(-3)}{1} = 3\\ \Rightarrow\-12c^2 = -4
 \ \Rightarrow\ c^2 = \dfrac{1}{3}\ \Rightarrow\ c= \pm \dfrac{1}{\sqrt{3}}
 \end{multline*} Since $0 < \dfrac{1}{\sqrt{3}} < 1$, we have that $c= \dfrac{1}{\sqrt{3}}$.
-\end{proof}
+\end{pf}
 \end{multicols}
 \begin{multicols}{2}
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $[0, \infty)$, $f$ is continuous on $[0,25]$ and differentiable on $(0,25)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
 f'(c)=\dfrac{1}{2\sqrt{c}} = \dfrac{f(25) - f(0)}{25-0}=\dfrac{5}{25} = \dfrac{1}{5}\\
 \ \Rightarrow\ 2\sqrt{c} = 5\ \Rightarrow\ \sqrt{c}= \dfrac{5}{2}\ \Rightarrow\ c= \dfrac{25}{4} = 6.25
 \end{multline*} Since $0 < \dfrac{25}{4} < 25$, we have that $c= \dfrac{25}{4}$.
-\end{proof}\columnbreak
+\end{pf}\columnbreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $[0, \infty)$, $f$ is continuous on $[0,36]$ and differentiable on $(0,36)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
-f'(c) = \dfrac{1}{2\sqrt{c}}-\dfrac{1}{6} = \dfrac{f(36) - f(0)}{36-0}=\dfrac{0-0}{36} = 0\\
-\ \Rightarrow\ \dfrac{1}{2\sqrt{c}} = \dfrac{1}{6} \ \Rightarrow\ 2\sqrt{c} = 6 \ \Rightarrow\ \sqrt{c}= 3 \ \Rightarrow\ c= 9
+f'(c) = \dfrac{1}{2\sqrt{c}}-\dfrac{1}{6} = \dfrac{f(36) - f(0)}{36-0}\\=\dfrac{0-0}{36} = 0\\
+\ \Rightarrow\ \dfrac{1}{2\sqrt{c}} = \dfrac{1}{6} \ \Rightarrow\ 2\sqrt{c} = 6 \\ \Rightarrow\ \sqrt{c}= 3 \ \Rightarrow\ c= 9
 \end{multline*} Since $0 < 9 < 36$, we have that $c= 9$.
-\end{proof}
+\end{pf}
 \end{multicols}
 \begin{multicols}{2}
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 While $f$ is differentiable on its domain, $(-\infty, 0)\cup (0,\infty)$, but $f(0)$ DNE. Hence, $f$ is neither differentiable on $(-1,1)$ nor continuous on $[-1,1]$. So, $f$ does not satisfies the hypotheses of the Mean Value Theorem. Any number $c$ that satisfies the conclusion of the Mean Value Theorem would satisfy
 \begin{multline*}
-f'(c) = -\dfrac{2}{3}x^{-1/3}= \dfrac{f(1) - f(-1)}{1+1}=\dfrac{0-0}{2} = 0\\
+f'(c) = -\dfrac{2}{3}x^{-1/3}= \dfrac{f(1) - f(-1)}{1+1}\\=\dfrac{0-0}{2} = 0\\
 \Rightarrow\ x^{-1/3} = 0 \ \Rightarrow\ x^{1/3} = \dfrac{1}{0} \Rightarrow\Leftarrow
 \end{multline*} Therefore, there are no numbers $c$ which satisfy the conclusion of the Mean Value Theorem.
-\end{proof}\columnbreak
+\end{pf}\columnbreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $(-\infty, \infty)$, $f$ is continuous on $\left[\dfrac{\pi}{12},\dfrac{7\pi}{12}\right]$ and differentiable on $\left(\dfrac{\pi}{12},\dfrac{7\pi}{12}\right)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
-f'(c)=-3\sin(3c) = \scalebox{0.75}{$\dfrac{f(7\pi/12) - f(\pi/12)}{7\pi/12-\pi/12}=\dfrac{\cos(7\pi/4)-\cos(\pi/4)}{\pi/2}$} = 0\\
+f'(c)=-3\sin(3c) = \dfrac{f(7\pi/12) - f(\pi/12)}{7\pi/12-\pi/12}\\=\dfrac{\cos(7\pi/4)-\cos(\pi/4)}{\pi/2} = 0\\
 \ \Rightarrow\ \sin(3c) = 0 \ \Rightarrow\ 3c = \pi k \ \Rightarrow\ c= \dfrac{\pi}{3}k
 \end{multline*} Since $ \dfrac{\pi}{12} < \dfrac{\pi}{3} <  \dfrac{7\pi}{12}$, we have that $c=  \dfrac{\pi}{3}$.
-\end{proof}
-\end{multicols}
+\end{pf}
+\end{multicols}\pagebreak
+
 \begin{multicols}{2}
 \itemspade \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 While $f$ is differentiable on its domain, $(-\infty, 3)\cup (3,\infty)$, but $f(3)$ DNE. Hence, $f$ is neither differentiable on $(2,5)$ nor continuous on $[2,5]$. So, $f$ does not satisfies the hypotheses of the Mean Value Theorem. Any number $c$ that satisfies the conclusion of the Mean Value Theorem would satisfy
 \begin{multline*}
-f'(c)=-2(c-3)^{-3} =\scalebox{0.9}{$\dfrac{f(5) - f(2)}{5-2} = \dfrac{1/4-1}{3}$} = -\dfrac{1}{4}\\
+f'(c)=-2(c-3)^{-3} =\dfrac{f(5) - f(2)}{5-2}\\ = \dfrac{1/4-1}{3} = -\dfrac{1}{4}\\
 \ \Rightarrow\ (c-3)^{-3} = \dfrac{1}{8} \ \Rightarrow\ (c-3)^3=8 \\ \Rightarrow\ c-3 = 2 \ \Rightarrow\ c = 5
 \end{multline*} But $5\not< 5$. Therefore, there are no numbers $c$ which satisfy the conclusion of the Mean Value Theorem.
-\end{proof}\columnbreak
+\end{pf}\columnbreak
 
 \item \mbox{}\vspace{-25pt}
 
-\begin{proof}
+\begin{pf}
 Since $f$ is differentiable on its domain, $(-\infty, 0)\cup (0,\infty)$, $f$ is continuous on $[1,2]$ and differentiable on $(1,2)$. So, $f$ satisfies the hypotheses of the Mean Value Theorem. Thus, there is a $c$ such that 
 \begin{multline*}
-f'(c) -\dfrac{1}{c^2} = \dfrac{f(2) - f(1)}{2-1}= \dfrac{1/2-1}{1}=\dfrac{-1/2}{1} = -\dfrac{1}{2}\\
+f'(c) -\dfrac{1}{c^2} = \dfrac{f(2) - f(1)}{2-1}= \dfrac{1/2-1}{1}\\=\dfrac{-1/2}{1} = -\dfrac{1}{2}\\
 \ \Rightarrow\ c^2 = 2 \ \Rightarrow\ c= \pm\sqrt{2}
 \end{multline*} Since $1 < \sqrt{2} < 2$, we have that $c= \sqrt{2}$.
-\end{proof}
+\end{pf}
 \end{multicols}
 \begin{multicols}{2}
 \itemspade 10
 \itemspade $8\le f(5)-f(1)\le 16$
 \end{multicols}
 \itemspade 
-\begin{proof}
+\begin{pf}
 No, $\dfrac{\Delta y}{\Delta x}\bigg|_{[2,5]} = \dfrac{f(2)-f(0)}{2-0} = \dfrac{17}{2} = 8.5$. The Mean Value Theorem implies that $f'(c) = 8.5$ for some $0<c<2$, but $f'(x) \le 6$ for all $x$, a contradiction.
-\end{proof}
+\end{pf}
 
-\item\begin{proof}
+\item\begin{pf}
 Let $f(x)=x^3+3x-15$, which is a differentiable function. Note that $f(0) = (0)^3+3(0)-15 = -15 < 0$ and $f(3) = (3)^3+3(3)-15 = 21 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $0$ and $2$ such that $f(c) = 0$. Therefore, the above equation has a solution.
 
 Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$. Then the average rate of change of $f$ on the interval $[a,b]$ is 0 since $f(a) = 0 = f(b)$. Since $f$ is a everywhere differentiable function, the Mean Value Theorem states that there is some $c$ between $a$ and $b$ such that $f'(c) = 0$. On the other hand, $f'(x) = 3x^2+3 = 3(x^2+1)$, which is positive for all $x$, which is a contradiction. Therefore, $f$ has at most one real root.
-\end{proof}
+\end{pf}
 
-\item\begin{proof}
+\item\begin{pf}
 Let $f(x)=2x+\sin x$, which is a differentiable function. Clearly, $f(0) = 2(0)+\sin(0) = 0$. Therefore, the above equation has a solution.
 
 Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$. Then the average rate of change of $f$ on the interval $[a,b]$ is 0 since $f(a) = 0 = f(b)$. Since $f$ is a everywhere differentiable function, the Mean Value Theorem states that there is some $c$ between $a$ and $b$ such that $f'(c) = 0$. On the other hand, $f'(x) = 2+\cos x > 2-1 = 1$, which is positive for all $x$, which is a contradiction. Therefore, $f$ has at most one real root.
-\end{proof}
+\end{pf}
 
-\item \begin{proof}
+\item \begin{pf}
 Let $f(x)=3x+\sin(2x)$, which is a differentiable function. Clearly, $f(0) = 3(0)+\sin(0) = 0$. Therefore, the above equation has a solution.
 
 Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$. Then the average rate of change of $f$ on the interval $[a,b]$ is 0 since $f(a) = 0 = f(b)$. Since $f$ is a everywhere differentiable function, the Mean Value Theorem states that there is some $c$ between $a$ and $b$ such that $f'(c) = 0$. On the other hand, $f'(x) = 3+2\cos(2x) \ge 3+2(-1) = 3-2 = 1$, that is, $f'(x)$ is positive for all $x$, which is a contradiction. Therefore, $f$ has at most one real root.
-\end{proof}
-\itemspade \begin{proof}
+\end{pf}
+\itemspade \begin{pf}
 Let $f(x)=7x+\cos x$, which is a differentiable function. Note that $f(-\pi) = -7\pi + \cos(-\pi) = -7\pi-1 < 0$ and $f(0) = 7(0) + \cos(0) = 1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $-\pi$ and $0$ such that $f(c) = 0$. Therefore, the above equation has a solution.
 
 Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$. Then the average rate of change of $f$ on the interval $[a,b]$ is 0 since $f(a) = 0 = f(b)$. Since $f$ is a everywhere differentiable function, the Mean Value Theorem states that there is some $c$ between $a$ and $b$ such that $f'(c) = 0$. On the other hand, $f'(x) = 7-\sin x \ge 7 - 1 = 6$, which is positive for all $x$, which is a contradiction. Therefore, $f$ has at most one real root.
-\end{proof}
+\end{pf}
 
-\item \begin{proof}
+\item \begin{pf}
 Let $f(x)=e^x+x$, which is a differentiable function. Note that $f(-1) = e^{-1}-1 < 0$ (note that  $1/e<1$ since $e>1$) and $f(0) = e^0+0 = 1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $-1$ and $0$ such that $f(c) = 0$. Therefore, the above equation has a solution.
 
 Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$. Then the average rate of change of $f$ on the interval $[a,b]$ is 0 since $f(a) = 0 = f(b)$. Since $f$ is a everywhere differentiable function, the Mean Value Theorem states that there is some $c$ between $a$ and $b$ such that $f'(c) = 0$. On the other hand, $f'(x) = e^x+1$. Since $e^x>0$ for all $x$, $f'(x)$ is positive for all $x$, which is a contradiction. Therefore, $f$ has at most one real root.
-\end{proof}
-\item \begin{proof}
+\end{pf}
+\item \begin{pf}
 Let $f(x)=\ln(x)+x$, which is a differentiable function. Note that $f(e^{-1}) = \ln(e^{-1}) + e^{-1} = -1+\dfrac{1}{e} < 0$ (note that  $1/e<1$ since $e>1$) and $f(1) = \ln(1)+1 = 1 > 0$. Therefore, by the Intermediate Value Theorem, there exists some value $c$ between $-1$ and $0$ such that $f(c) = 0$. Therefore, the above equation has a solution.
 
 Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$. Then the average rate of change of $f$ on the interval $[a,b]$ is 0 since $f(a) = 0 = f(b)$. Since $f$ is a everywhere differentiable function, the Mean Value Theorem states that there is some $c$ between $a$ and $b$ such that $f'(c) = 0$. On the other hand, $f'(x) = e^x+1$. Since $e^x>0$ for all $x$, $f'(x)$ is positive for all $x$, which is a contradiction. Therefore, $f$ has at most one real root.
-\end{proof}
+\end{pf}
 \end{enumerate}
 \vspace{-15pt}
 
 
 %%%% Section 4.3 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{1sttest}{The First Derivative Test}
-\rebootHW
-
+\startSolutions{The First Derivative Test}{1sttest}
 \begin{enumerate}[!HW!]
 \item increase: $(-\infty,\infty)$, decrease: DNE, max  DNE, min  DNE, upward: DNE, downward: DNE, PoI  DNE
 \item increase: $\left(\dfrac{1}{2},\infty\right)$, decrease: $\left(-\infty, \dfrac{1}{2}\right)$, max  DNE, min @ $x=\dfrac{1}{2}$, upward: $(-\infty,\infty)$, downward: DNE, PoI DNE
@@ -15344,9 +15265,7 @@ Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$.
 
 %%%% Section 4.4 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{2ndtest}{The Second Derivative Test}
-\rebootHW
-
+\startSolutions{The Second Derivative Test}{2ndtest}
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
 \item max @ $x=4$, min @ $x=-\dfrac{4}{3}$
@@ -15391,9 +15310,7 @@ Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$.
 
 %%%% Section 4.5 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{lhospital}{l'Hospital's Rule}
-\rebootHW
-
+\startSolutions{l'Hospital's Rule}{lhospital}
 \begin{enumerate}[!HW!]
 \begin{multicols}{7}
 \item  0
@@ -15429,18 +15346,15 @@ Suppose to the contrary that $f$ has two distinct roots $a$ and $b$ with $a< b$.
 \end{multicols}
 \end{enumerate}
 \vspace{-15pt}
-
+\pagebreak
 %%%% Section 4.6 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{sketch}{Curve Sketching}
-\rebootHW
-
+\startSolutions{Curve Sketching}{sketch}
 \begin{enumerate}[!HW!]
 \item \mbox{}\vspace{-25pt}
 
-
 \begin{multicols}{2}
-\begin{tikzpicture}[scale=0.45]
+\begin{tikzpicture}[scale=0.4]
 \gridlines{-6}{6}{-10}{8};
 \draw[blue, ultra thick, <->, samples=100] plot[domain= -1.26:4.75] ({\x}, {2*(\x)^2-7*\x-4});
 \draw[fill, blue] (1.75,-10.125) circle (0.2) node[right] {$\left(\frac{5}{4},-\frac{81}{8}\right)$}
@@ -15462,7 +15376,7 @@ $f'(x)$ & $-$ & $+$ \\
 $f''(x)$ & $+$ & $+$ \\ 
 \end{tabular}
 \end{center} 
-\end{multicols}\pagebreak
+\end{multicols}
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -15518,7 +15432,7 @@ $f'(x)$ & $-$ & $-$ \\
 $f''(x)$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center} 
-\end{multicols}
+\end{multicols}\pagebreak
 
 
 \itemspade \mbox{}\vspace{-25pt}
@@ -15548,7 +15462,7 @@ $f'(x)$ & $+$ & $+$ & $-$ & $-$ \\
 $f''(x)$ & $+$ & $-$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center} 
-\end{multicols}\pagebreak
+\end{multicols}
 
 
 \item \mbox{}\vspace{-25pt}
@@ -15608,7 +15522,7 @@ $f'(x)$ & $-$ & $-$ & $-$ & $-$ \\
 $f''(x)$ & $-$ & $+$ & $-$ & $+$\\ 
 \end{tabular}
 \end{center} 
-\end{multicols}
+\end{multicols}\pagebreak
 
 \item \mbox{}\vspace{-25pt}
 
@@ -15636,7 +15550,7 @@ $f'(x)$ & $-$ & $+$ & $-$ & $-$\\
 $f''(x)$ & $-$ & $-$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center} 
-\end{multicols}\pagebreak
+\end{multicols}
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -15692,7 +15606,7 @@ $f'(x)$ & $-$ & $-$ & $-$ \\
 $f''(x)$ & $-$ & $+$ & $+$\\ 
 \end{tabular}
 \end{center} 
-\end{multicols}
+\end{multicols}\pagebreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -15722,7 +15636,7 @@ $f'(x)$ & $+$ & $+$ & $+$ \\
 $f''(x)$ & $+$ & $+$ & $-$\\ 
 \end{tabular}
 \end{center} 
-\end{multicols}\pagebreak
+\end{multicols}
 
 
 \itemspade \mbox{}\vspace{-25pt}
@@ -15780,7 +15694,7 @@ $f'(x)$ & $+$ & $+$ & $-$ & $-$ & $-$ \\
 $f''(x)$ & $+$ & $-$ & $-$ & $-$ & $-$\\ 
 \end{tabular}
 \end{center} 
-\end{multicols}
+\end{multicols}\pagebreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -15808,7 +15722,7 @@ $f'(x)$ & $-$ & $-$ & $+$ & $-$ \\
 $f''(x)$ & $+$ & $-$ & $-$ & $+$\\ 
 \end{tabular}
 \end{center} 
-\end{multicols}\pagebreak
+\end{multicols}
 
 \item \mbox{}\vspace{-25pt}
 
@@ -15842,9 +15756,7 @@ $f''(x)$ & $-$ & $+$ & $+$ & $-$ \\
 
 %%%% Section 4.7 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{sketchII}{Curve Sketching II}
-\rebootHW
-
+\startSolutions{Curve Sketching II}{sketchII}
 \begin{enumerate}[!HW!]
 \item \mbox{}\vspace{-25pt}
 
@@ -15873,7 +15785,7 @@ $f'(x)$ & $-$ & $-$ \\
 $f''(x)$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}
+\end{multicols}\pagebreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -15900,7 +15812,7 @@ $f'(x)$ & $+$ & $-$ \\
 $f''(x)$ & $-$ & $-$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}\pagebreak
+\end{multicols}
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -15954,7 +15866,7 @@ $f'(x)$ & $+$ & $+$ \\
 $f''(x)$ & $+$ & $-$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}
+\end{multicols}\pagebreak
 
 \item \mbox{}\vspace{-25pt}
 
@@ -15984,7 +15896,7 @@ $f''(x)$ & $-$ & $-$ & $+$ & $+$ \\
 \end{tabular}
 \end{center}
 \end{multicols}
-\pagebreak 
+ 
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -16046,7 +15958,7 @@ $f'(x)$ & $+$ & $+$ \\
 $f''(x)$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}
+\end{multicols}\pagebreak
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -16075,7 +15987,7 @@ $f'(x)$ & $+$ & $+$ \\
 $f''(x)$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}\pagebreak
+\end{multicols}
 
 \itemspade \mbox{}\vspace{-25pt}
 
@@ -16137,7 +16049,7 @@ second derivative/concavity:\\ upward on $(-\ln 2,\infty)$,\\ downward on $(-\in
 $f''(x)$ & $-$ & $+$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}
+\end{multicols}\pagebreak
 
 \item \mbox{}\vspace{-25pt}
 
@@ -16165,7 +16077,7 @@ second derivative/concavity:\\ upward on $(-\infty, -2-\sqrt{2})\cup(-2+\sqrt{2}
 $f''(x)$ & $+$ & $-$  & $-$ & $+$ & $+$\\ 
 \end{tabular}
 \end{center}
-\end{multicols}\pagebreak
+\end{multicols}
 
 \item \mbox{}\vspace{-25pt}
 
@@ -16218,7 +16130,7 @@ $f'(x)$ & $-$ & $+$\\
 $f''(x)$ & $+$ & $+$ \\ 
 \end{tabular}
 \end{center}
-\end{multicols}
+\end{multicols}\pagebreak
 
 \item \mbox{}\vspace{-25pt}
 
@@ -16246,12 +16158,11 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 \end{tabular}
 \end{center}
 \end{multicols}
-\end{enumerate}\pagebreak
+\end{enumerate}
 
 %%%% Section 4.8 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{optimize}{Optimization}
-\rebootHW
+\startSolutions{Optimization}{optimize}
 \begin{enumerate}[!HW!]
 \begin{multicols}{6}
 \item $-625$
@@ -16281,8 +16192,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 4.9 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{optimizeII}{Optimization II}
-\rebootHW
+\startSolutions{Optimization II}{optimizeII}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item 120,000 $\text{ft}^2$
@@ -16319,9 +16229,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 4.10 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{newton}{Newton's Method}
-\rebootHW
-
+\startSolutions{Newton's Method}{newton}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $L(x) = \dfrac{x+9}{6}; \sqrt{10}\approx \dfrac{19}{6}$
@@ -16383,9 +16291,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 4.11 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{antidiff}{Antiderivatives}
-\rebootHW
-
+\startSolutions{Antiderivatives}{antidiff}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $\dfrac{1}{2}x^2-7x+C$
@@ -16447,12 +16353,10 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Chapter 5 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% 
-\startSolutionsChap{integral}{Integrals}  
+\startSolutionsChap{Integrals}{integral}  
 %%%% Section 5.1 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{sigma}{Sigma Notation}
-\rebootHW
-
+\startSolutions{Sigma Notation}{sigma}
 \begin{enumerate}[!HW!]
 \begin{multicols}{2}
 \itemspade $\dfrac{7}{8}+\dfrac{7}{9}+\dfrac{7}{10}+\dfrac{7}{11}+\dfrac{7}{12}+\dfrac{7}{13}$
@@ -16492,8 +16396,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.2 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{area}{Area Under the Curve}
-\rebootHW
+\startSolutions{Area Under the Curve}{area}
 \begin{enumerate}[!HW!]
 \begin{multicols}{4}
 \item under, 16.125
@@ -16594,9 +16497,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.3 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{riemann}{Riemann Sums}
-\rebootHW
-
+\startSolutions{Riemann Sums}{riemann}
 \begin{enumerate}[!HW!]
 \begin{multicols}{4}
 \item under, 8.1816
@@ -16680,9 +16581,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.4 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{definite}{Definite Integrals}
-\rebootHW
-
+\startSolutions{Definite Integrals}{definite}
 \begin{enumerate}[!HW!]
 \begin{multicols}{7}
 \item 21
@@ -16713,9 +16612,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.5 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{ftc}{The Fundamental Theorem of Calculus}
-\rebootHW
-
+\startSolutions{The Fundamental Theorem of Calculus}{ftc}
 \begin{enumerate}[!HW!]
 \begin{multicols}{7}
 \item 0
@@ -16781,9 +16678,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.6 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{ftcII}{The Fundamental Theorem of Calculus II}
-\rebootHW
-
+\startSolutions{The Fundamental Theorem of Calculus II}{ftcII}
 \begin{enumerate}[!HW!]
 \begin{multicols}{7}
 \item 3
@@ -16816,9 +16711,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.7 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{indefinite}{Rates of Changes within the Sciences II}
-\rebootHW
-
+\startSolutions{Rates of Changes within the Sciences II}{indefinite}
 \begin{enumerate}[!HW!]
 \item The integral measures the displacement of the particle for the first 5 seconds.
 \itemspade The integral measures the net change of charge from time $t=a$ to time $t=b$.
@@ -16842,9 +16735,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.8 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{usub}{$u$-Substitution}
-\rebootHW
-
+\startSolutions{$u$-Substitution}{usub}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $e^{2x}+ C$
@@ -16882,9 +16773,7 @@ $f''(x)$ & $-$ & $-$  & $+$ \\
 
 %%%% Section 5.9 %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
 %%%%  %%%%%%  %%%%%%%%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%% %%%%%%   
-\startSolutions{usubII}{$u$-Substitution II}
-\rebootHW
-
+\startSolutions{$u$-Substitution II}{usubII}
 \begin{enumerate}[!HW!]
 \begin{multicols}{3}
 \item $\dfrac{1}{808}(8x^2+4)^{101} +C$
@@ -17183,3 +17072,4 @@ If $\dbinom{n}{k} = \dfrac{n!}{k!(n-k)!}$, then
 %Todo Index
 \end{appendices}
 \end{document}
+
