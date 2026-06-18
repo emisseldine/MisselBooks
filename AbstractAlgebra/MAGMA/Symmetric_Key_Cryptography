@@ -1,0 +1,70 @@
+//This MAGMA code can be compiled at http://magma.maths.usyd.edu.au/calc/
+
+Digitize := function(message); 
+E := [];
+m := 0;
+for i:= 1 to #message do
+    case message[i]:
+    when "a", "A": E cat:=[0]; when "b", "B": E cat:=[1]; when "c", "C": E cat:=[2];
+    when "d", "D": E cat:=[3]; when "e", "E": E cat:=[4]; when "f", "F": E cat:=[5];
+    when "g", "G": E cat:=[6]; when "h", "H": E cat:=[7]; when "i", "I": E cat:=[8];
+    when "j", "J": E cat:=[9]; when "k", "K": E cat:=[10]; when "l", "L": E cat:=[11];
+    when "m", "M": E cat:=[12]; when "n", "N": E cat:=[13]; when "o", "O": E cat:=[14];
+    when "p", "P": E cat:=[15]; when "q", "Q": E cat:=[16]; when "r", "R": E cat:=[17];
+    when "s", "S": E cat:=[18]; when "t", "T": E cat:=[19]; when "u", "U": E cat:=[20];
+    when "v", "V": E cat:=[21]; when "w", "W": E cat:=[22]; when "x", "X": E cat:=[23];
+    when "y", "Y": E cat:=[24]; when "z", "Z": E cat:=[25];
+    end case;
+end for;
+return E;
+end function;
+
+Alphabetize := function(code); 
+D := "";
+m := 0;
+for i:= 1 to #code do
+    case code[i]:
+    when 0: D cat:="A"; when 1: D cat:="B"; when 2: D cat:="C";
+    when 3: D cat:="D"; when 4 : D cat:="E"; when 5: D cat:="F";
+    when 6: D cat:="G"; when 7: D cat:="H"; when 8: D cat:="I";
+    when 9: D cat:="J"; when 10: D cat:="K"; when 11: D cat:="L";
+    when 12: D cat:="M"; when 13: D cat:="N"; when 14: D cat:="O";
+    when 15: D cat:="P"; when 16: D cat:="Q"; when 17: D cat:="R";
+    when 18: D cat:="S"; when 19: D cat:="T"; when 20: D cat:="U";
+    when 21: D cat:="V"; when 22: D cat:="W"; when 23: D cat:="X";
+    when 24: D cat:="Y"; when 25: D cat:="Z";
+    end case;
+end for;
+return D;
+end function;
+
+CaesarEncrypt := function(plaintext, a, b);
+P := Digitize(plaintext);
+C := [];
+for i := 1 to #P do
+    C cat:= [(a*P[i]+b) mod 26];
+end for;
+return Alphabetize(C);
+end function;
+
+CaesarDecrypt := function(ciphertext, a, b);
+C := Digitize(ciphertext);
+P := [];
+ainv := InverseMod(a,26);
+binv := ainv*b;
+for i := 1 to #C do
+    P cat:= [(ainv*C[i]-binv) mod 26];
+end for;
+return Alphabetize(P);
+end function;
+
+//Examples 
+
+Digitize("Cryptography");
+
+Alphabetize([ 12, 8, 18, 18, 4, 11, 3, 8, 13, 4 ]);
+
+CaesarEncrypt("We ride at noon", 1, 3);
+CaesarEncrypt("WEXRIDEXATXNOON", 1, 3);
+
+CaesarDecrypt("DOJHEUD", 1, 3);
