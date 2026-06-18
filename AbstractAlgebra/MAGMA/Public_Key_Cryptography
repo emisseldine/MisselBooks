@@ -1,0 +1,96 @@
+// This MAGMA code can be compiled at http://magma.maths.usyd.edu.au/calc/
+
+// Dr. Misseldine's Public Key
+// e := 17;
+// n := 1030939719288293437227911877452767233915886422910927826089912725109886136705892109592272121542938809416816702749278385596820061415954841542352923327267600354767;
+
+PadMessage:= function(message, N);
+PM := [];
+E := "";
+for i:= 1 to #message do
+case message[i]:
+when "a": E cat:="10"; when "b": E cat:="11"; when "c": E cat:="12"; when "d": E cat:="13"; 
+when "e": E cat:="14";  when "f": E cat:="15"; when "g": E cat:="16"; when "h": E cat:="17"; 
+when "i": E cat:="18"; when "j": E cat:="19"; when "k": E cat:="20"; when "l": E cat:="21"; 
+when "m": E cat:="22"; when "n": E cat:="23"; when "o": E cat:="24"; when "p": E cat:="25"; 
+when "q": E cat:="26"; when "r": E cat:="27"; when "s": E cat:="28"; when "t": E cat:="29"; 
+when "u": E cat:="30"; when "v": E cat:="31"; when "w": E cat:="32"; when "x": E cat:="33"; 
+when "y": E cat:="34"; when "z": E cat:="35"; when "A": E cat:="36"; when "B": E cat:="37"; 
+when "C": E cat:="38"; when "D": E cat:="39"; when "E": E cat:="40"; when "F": E cat:="41"; 
+when "G": E cat:="42"; when "H": E cat:="43"; when "I": E cat:="44"; when "J": E cat:="45"; 
+when "K": E cat:="46"; when "L": E cat:="47"; when "M": E cat:="48"; when "N": E cat:="49"; 
+when "O": E cat:="50"; when "P": E cat:="51"; when "Q": E cat:="52"; when "R": E cat:="53"; 
+when "S": E cat:="54"; when "T": E cat:="55"; when "U": E cat:="56"; when "V": E cat:="57"; 
+when "W": E cat:="58"; when "X": E cat:="59"; when "Y": E cat:="60"; when "Z": E cat:="61"; 
+when " ": E cat:="62"; when ".": E cat:="63"; when ",": E cat:="64"; when "?": E cat:="65"; 
+when "!": E cat:="66"; when "$": E cat:="67"; when "%": E cat:="68"; when "&": E cat:="69";
+when "0": E cat:="70"; when "1": E cat:="71"; when "2": E cat:="72"; when "3": E cat:="73"; 
+when "4": E cat:="74"; when "5": E cat:="75"; when "6": E cat:="76"; when "7": E cat:="77"; 
+when "8": E cat:="78"; when "9": E cat:="79"; when "+": E cat:="80"; when "-": E cat:="81"; 
+when "*": E cat:="82"; when "/": E cat:="83"; when "=": E cat:="84"; when "^": E cat:="85"; 
+when "@": E cat:="86"; when "#": E cat:="87"; when "(": E cat:="88"; when ")": E cat:="89";
+when ";": E cat:="90"; when ":": E cat:="91"; when "<": E cat:="92"; when ">": E cat:="93"; 
+when "'": E cat:="94"; when "[": E cat:="95"; when "]": E cat:="96"; when "{": E cat:="97"; 
+when "}": E cat:="98"; when "_": E cat:="99";
+end case;
+
+if StringToInteger(E, 10) gt N then 
+    PM cat:= [StringToInteger(Substring(E, 1, #E-2), 10)];
+    E := Substring(E, #E-1, 2);
+end if;
+end for;
+PM cat:= [StringToInteger(E, 10)];
+return PM;
+end function;
+
+DepadMessage := function(code);
+D := &cat [IntegerToString(code[i]) : i in [1..#code]];
+M := "";
+
+for i:= 1 to #D div 2 do
+case Substring(D, 2*i-1, 2):
+when "10": M cat:="a"; when "11": M cat:="b"; when "12": M cat:="c"; when "13": M cat:="d";
+when "14": M cat:="e"; when "15": M cat:="f"; when "16": M cat:="g"; when "17": M cat:="h"; 
+when "18": M cat:="i"; when "19": M cat:="j"; when "20": M cat:="k"; when "21": M cat:="l"; 
+when "22": M cat:="m"; when "23": M cat:="n"; when "24": M cat:="o"; when "25": M cat:="p"; 
+when "26": M cat:="q"; when "27": M cat:="r"; when "28": M cat:="s"; when "29": M cat:="t"; 
+when "30": M cat:="u"; when "31": M cat:="v"; when "32": M cat:="w"; when "33": M cat:="x"; 
+when "34": M cat:="y"; when "35": M cat:="z"; when "36": M cat:="A"; when "37": M cat:="B"; 
+when "38": M cat:="C"; when "39": M cat:="D"; when "40": M cat:="E"; when "41": M cat:="F"; 
+when "42": M cat:="G"; when "43": M cat:="H"; when "44": M cat:="I"; when "45": M cat:="J"; 
+when "46": M cat:="K"; when "47": M cat:="L"; when "48": M cat:="M"; when "49": M cat:="N"; 
+when "50": M cat:="O"; when "51": M cat:="P"; when "52": M cat:="Q"; when "53": M cat:="R"; 
+when "54": M cat:="S"; when "55": M cat:="T"; when "56": M cat:="U"; when "57": M cat:="V"; 
+when "58": M cat:="W"; when "59": M cat:="X"; when "60": M cat:="Y"; when "61": M cat:="Z"; 
+when "62": M cat:=" "; when "63": M cat:="."; when "64": M cat:=","; when "65": M cat:="?"; 
+when "66": M cat:="!"; when "67": M cat:="$"; when "68": M cat:="%"; when "69": M cat:="&";
+when "70": M cat:="0"; when "71": M cat:="1"; when "72": M cat:="2"; when "73": M cat:="3"; 
+when "74": M cat:="4"; when "75": M cat:="5"; when "76": M cat:="6"; when "77": M cat:="7"; 
+when "78": M cat:="8"; when "79": M cat:="9"; when "80": M cat:="+"; when "81": M cat:="-"; 
+when "82": M cat:="*"; when "83": M cat:="/"; when "84": M cat:="="; when "85": M cat:="^"; 
+when "86": M cat:="@"; when "87": M cat:="#"; when "88": M cat:="("; when "89": M cat:=")";
+when "90": M cat:=";"; when "91": M cat:=":"; when "92": M cat:="<"; when "93": M cat:=">"; 
+when "94": M cat:="'"; when "95": M cat:="["; when "96": M cat:="]"; when "97": M cat:="{"; 
+when "98": M cat:="}"; when "99": M cat:="_";
+end case;
+end for;
+
+return M;
+end function;
+
+ExpRSA := function(plaintext, e, N);
+ciphertext := [];
+
+for i:=1 to #plaintext do
+    ciphertext cat:= [Modexp(plaintext[i], e, N)];
+end for;
+return ciphertext;
+end function;
+
+EncryptRSA := function(plaintext, e, N);
+return ExpRSA(PadMessage(plaintext, N), e, N);
+end function;
+
+DecryptRSA := function(ciphertext, d, N);
+return DepadMessage(ExpRSA(ciphertext, d, N));
+end function;
