@@ -13,7 +13,7 @@ def get_image(url):
 import matplotlib.pyplot as plt
 import numpy as np
 
-url = r'https://raw.githubusercontent.com/emisseldine/OpenLinear/main/Chapter6/images/bookcover.png'
+url = r'https://raw.githubusercontent.com/emisseldine/MisselBooks/main/LinearAlgebra/images/bookcover.png'
 cover = np.asarray(get_image(url))[:,:,0]
 color = 'Blues_r' 
 
