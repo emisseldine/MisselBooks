@@ -24,16 +24,13 @@ def IsIndependent(vectors):
     #returns True or False
 
 ### VERIFICATION ############################
-aug_matrix = lambda A,B : np.array([np.concatenate((A[i],B.reshape(len(A),-1)[i])) for i in range(len(A))])
-
 A = np.array([[1,1,2,3],[5,5,6,7], [9,9,10,11]])
 b = np.array([4, 8, 12])
-Ab = aug_matrix(A,b)
-print(Ab,"\n")
+print(np.c_[A,b],"\n") #np.c_[A,b] concatenates the two arrays forming the augmented matrix
 
 #forward phase
 A,b,piv = forward_phase(A,b)
-print(aug_matrix(A,b),"\n",piv,"\n")
+print(np.c_[A,b],"\n",piv,"\n")
 
 #linear independence?
 A = np.array([[1,2,3],[1,1,-1],[-5,4,-1]])
