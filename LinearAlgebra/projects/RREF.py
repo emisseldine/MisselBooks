@@ -31,27 +31,24 @@ def matrix_inverse(matrix):
     #write your code here
     #returns inverse of matrix
 
-### VERIFICATION ############################
-aug_matrix = lambda A,B : np.array([np.concatenate((A[i],B.reshape(len(A),-1)[i])) for i in range(len(A))])
-
+###VERIFY ############################
 A = np.array([[1,1,2,3],[5,5,6,7], [9,9,10,11]])
 b = np.array([4, 8, 12])
-Ab = aug_matrix(A,b)
-print(Ab,"\n")
+print(np.c_[A,b],"\n") #np.c_[A,b] concatenates the two arrays forming the augmented matrix
 
 #forward phase
 A,b,piv = forward_phase(A,b)
-print(aug_matrix(A,b),"\n",piv,"\n")
+print(np.c_[A,b],"\n",piv,"\n")
 
 #backward phase
 A,b = backward_phase(A,b,piv)
-print(aug_matrix(A,b),"\n")
+print(np.c_[A,b],"\n")
                 
 #RREF
 A = np.array([[6,5,0],[4,0,3],[0,2,1]])
 b = np.array([13,5,5])
 A,b = RREF(A,b)
-print(aug_matrix(A,b))
+print(np.c_[A,b],"\n")
 
 #inverse matrix
 A = np.array([[ -17.62298538952109, 11.501615891138508, -18.90957585845351, 8.064800573735518, 3.041236260451587, -12.427276295478965, 36.32578715119185, 9.965807931337359, -8.361459805348483, -2.063132322842499, -45.243644690398895, 6.520261563266029, -20.308420584909445, -0.22434038377750942, 2.3465416121720146],
