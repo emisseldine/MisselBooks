@@ -8,7 +8,7 @@ def Hamming_norm(x):
     #write your code here
 
 ### TASK 2 #########
-C = np.array([[0,0,0,0,0],[1,1,1,1,0],[1,0,1,0,1],[0,1,0,1,1]])
+C = np.array([[0,0,0,0,0],[1,1,1,1,0],[1,0,1,0,1],[0,1,0,1,1])
 def decode_C(w):
     #write your code here
 
@@ -27,7 +27,7 @@ for w in Words:
 print("\n")
 
 ### TASK 2 #########
-Words = np.array([[0,1,0,1,1],[1,1,1,0,0],[1,0,0,0,1]])
+Words = np.array([[0,1,0,1,1],[1,1,1,0,0],[1,0,0,0,1],[1,1,0,0,0]])
 for w in Words:
     print(f"{w} decodes as {decode_C(w)}.")
 print("\n")
