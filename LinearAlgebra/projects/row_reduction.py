@@ -18,7 +18,6 @@ def zero_above(coefficient_matrix, constant_matrix, pivot):
     #returns reduced_coefficient_matrix, reduced_constant_matrix
 
 ### VERIFICATION ############################
-###VERIFY ############################
 
 A = np.array([[0,2,3],[5,6,7], [9,10,11]])
 b = np.array([4, 8, 12])
