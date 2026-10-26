@@ -47,3 +47,8 @@ plt.ylabel('Stock Value (USD)')
 plt.title('Open Linear Stock Value Over Time')
 plt.legend()
 plt.show()
+
+# Count turning points to ensure < 30
+diff = np.diff(X)
+turning_points = np.sum((diff[:-1] * diff[1:]) < 0)
+print(f"Number of turning points after smoothing: {turning_points}")
