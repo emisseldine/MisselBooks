@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-plt.style.use('seaborn-v0_8-whitegrid')#replace with 'seaborn-whitegrid' if error occurs
 
 dilate = lambda a, b: np.array([[a, 0], [0, b]])
 
@@ -17,7 +16,6 @@ points = np.concatenate([[[1+(0.1+0.01*i),1] for i in range(81)],
 
 
 plt.figure(figsize=(8, 8), dpi=80)
-plt.ion()
 plt.axis([-9,3,-7,7])
 
 #Transform the set of points   
