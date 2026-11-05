@@ -871,7 +871,7 @@ print("y = " + model)
 print(f"train: {np.round(100*np.mean(train_error),2)}%")
 print(f"test: {np.round(100*np.mean(test_error),2)}%\n")
 
-#cross-validate with (x_1-a)_+
+#cross-validate with ReLU(x_1-a)
 a = 1.5
 X = np.column_stack((np.ones(m),x[0],x[3],
                      [int(x5 == 2) for x5 in x[4]],
