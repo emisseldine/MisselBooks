@@ -806,10 +806,10 @@ def house_sales_data():
 #initialize data
 D = house_sales_data()
 y = D["price"]
-x = np.column_stack((D["area"], D["beds"], np.ones(len(y)))) 
+X = np.column_stack((D["area"], D["beds"], np.ones(len(y)))) 
 
 #preform least squares on the data
-a_hat = np.linalg.lstsq(x,y,rcond=None)[0]
+a_hat = np.linalg.lstsq(X,y,rcond=None)[0]
 print(a_hat)
 
 # parameters in regression model
@@ -830,9 +830,9 @@ y2 = 234.50
 print("y_hat = $" + str(int(round(y_hat(x2),0))*1000))
 print("y = $" + str(int(y2*1000)), "\n")
 
-predicted = a_hat @ x.T
+predicted = a_hat @ X.T
 
-r = D['price'] - predicted                  # vector of predicted errors
+r = D['price'] - predicted                  # residual vector of predicted errors
 print("average = $" + str(round(np.average(r)*1000,2)))
 print("root mean square = $" + str(round(np.sqrt(sum(r**2)/len(r))*1000,2)))
 print("standard deviation = $" + str(round(np.std(r)*1000,2)), "\n")
