@@ -882,7 +882,7 @@ coeff, train_error, test_error = cross_validate(X, y)
 c = [round(np.mean(coeff[:,i]),4) for i in range(len(coeff[0]))]
 model = f"{c[0]}+{c[1]}x_1+{c[2]}x_3\n"
 model += "+".join([f"{c[i]}f_{i-2}(x_5)" for i in range(3,6)])
-model += f"\n+{c[6]}(x_1-{a})_+"
+model += f"\n+{c[6]}ReLU(x_1-{a})"
 print("y = " + model)
 print(f"train: {np.round(100*np.mean(train_error),2)}%")
 print(f"test: {np.round(100*np.mean(test_error),2)}%\n")
