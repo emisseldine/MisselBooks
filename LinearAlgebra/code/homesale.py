@@ -828,7 +828,7 @@ print("y = $" + str(int(y1*1000)), "\n")
 x2 = np.array([1.324, 2])
 y2 = 234.50
 print("y_hat = $" + str(int(round(y_hat(x2),0))*1000))
-print("y = $" + str(int(y1*1000)), "\n")
+print("y = $" + str(int(y2*1000)), "\n")
 
 predicted = a_hat @ x.T
 
