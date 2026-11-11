@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.metrics import confusion_matrix as errors 
+from sklearn.metrics import confusion_matrix as errors #[[true neg, false pos], [false neg, true pos]]
 
 boolean = lambda b : 2*int(b)-1
 
