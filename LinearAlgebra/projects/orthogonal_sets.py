@@ -21,4 +21,5 @@ print(IsOrthogonal(X),
       IsOrthogonal(Y),
       IsOrthogonal(Y[:-1]),
       IsOrthogonal(np.vstack([Y[:-1],np.zeros(3)])),
-      IsOrthogonal(X))
+      IsOrthogonal(X),
+      IsOrthogonal(Z))
